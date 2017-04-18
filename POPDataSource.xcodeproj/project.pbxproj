@@ -10,6 +10,8 @@
 		CE37D8A91EA653FE003864B0 /* POPDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE37D89F1EA653FE003864B0 /* POPDataSource.framework */; };
 		CE37D8AE1EA653FE003864B0 /* POPDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D8AD1EA653FE003864B0 /* POPDataSourceTests.swift */; };
 		CE37D8B01EA653FE003864B0 /* POPDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CE37D8A21EA653FE003864B0 /* POPDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE37D8BE1EA65669003864B0 /* DataSource in Resources */ = {isa = PBXBuildFile; fileRef = CE37D8BD1EA65669003864B0 /* DataSource */; };
+		D4BD8A53DD56C9D6D3187636 /* Pods_POPDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77D237AC09AF467E8173067 /* Pods_POPDataSource.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077369996F07226B134686D6 /* Pods_POPDataSourceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POPDataSourceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4642562F6049A1A23E435E0D /* Pods-POPDataSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPDataSource.release.xcconfig"; path = "Pods/Target Support Files/Pods-POPDataSource/Pods-POPDataSource.release.xcconfig"; sourceTree = "<group>"; };
+		48D7786FAD7974450F0EDAFA /* Pods-POPDataSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPDataSource.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POPDataSource/Pods-POPDataSource.debug.xcconfig"; sourceTree = "<group>"; };
+		C77D237AC09AF467E8173067 /* Pods_POPDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POPDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE37D89F1EA653FE003864B0 /* POPDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = POPDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE37D8A21EA653FE003864B0 /* POPDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPDataSource.h; sourceTree = "<group>"; };
 		CE37D8A31EA653FE003864B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE37D8A81EA653FE003864B0 /* POPDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POPDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE37D8AD1EA653FE003864B0 /* POPDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPDataSourceTests.swift; sourceTree = "<group>"; };
 		CE37D8AF1EA653FE003864B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE37D8BD1EA65669003864B0 /* DataSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataSource; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BD8A53DD56C9D6D3187636 /* Pods_POPDataSource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +58,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44649A9FE5D7ABA963343E54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77D237AC09AF467E8173067 /* Pods_POPDataSource.framework */,
+				077369996F07226B134686D6 /* Pods_POPDataSourceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE37D8951EA653FE003864B0 = {
 			isa = PBXGroup;
 			children = (
 				CE37D8A11EA653FE003864B0 /* POPDataSource */,
 				CE37D8AC1EA653FE003864B0 /* POPDataSourceTests */,
 				CE37D8A01EA653FE003864B0 /* Products */,
+				DF2281C776FFC6FCD9C7F8F1 /* Pods */,
+				44649A9FE5D7ABA963343E54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				CE37D8A21EA653FE003864B0 /* POPDataSource.h */,
+				CE37D8BD1EA65669003864B0 /* DataSource */,
 				CE37D8A31EA653FE003864B0 /* Info.plist */,
 			);
 			path = POPDataSource;
@@ -84,6 +104,15 @@
 				CE37D8AF1EA653FE003864B0 /* Info.plist */,
 			);
 			path = POPDataSourceTests;
+			sourceTree = "<group>";
+		};
+		DF2281C776FFC6FCD9C7F8F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48D7786FAD7974450F0EDAFA /* Pods-POPDataSource.debug.xcconfig */,
+				4642562F6049A1A23E435E0D /* Pods-POPDataSource.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE37D8B31EA653FE003864B0 /* Build configuration list for PBXNativeTarget "POPDataSource" */;
 			buildPhases = (
+				E74F514B7C762AB1A10BE6E1 /* [CP] Check Pods Manifest.lock */,
 				CE37D89A1EA653FE003864B0 /* Sources */,
 				CE37D89B1EA653FE003864B0 /* Frameworks */,
 				CE37D89C1EA653FE003864B0 /* Headers */,
 				CE37D89D1EA653FE003864B0 /* Resources */,
+				AD6A6E82F4A7294859A43B55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE37D8BE1EA65669003864B0 /* DataSource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +222,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD6A6E82F4A7294859A43B55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-POPDataSource/Pods-POPDataSource-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74F514B7C762AB1A10BE6E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE37D89A1EA653FE003864B0 /* Sources */ = {
@@ -321,6 +386,7 @@
 		};
 		CE37D8B41EA653FE003864B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D7786FAD7974450F0EDAFA /* Pods-POPDataSource.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -339,6 +405,7 @@
 		};
 		CE37D8B51EA653FE003864B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4642562F6049A1A23E435E0D /* Pods-POPDataSource.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -396,6 +463,7 @@
 				CE37D8B51EA653FE003864B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE37D8B61EA653FE003864B0 /* Build configuration list for PBXNativeTarget "POPDataSourceTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +472,7 @@
 				CE37D8B81EA653FE003864B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

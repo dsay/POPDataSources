@@ -1,0 +1,6 @@
+framework module Pods_POPDataSource {
+  umbrella header "Pods-POPDataSource-umbrella.h"
+
+  export *
+  module * { export * }
+}
