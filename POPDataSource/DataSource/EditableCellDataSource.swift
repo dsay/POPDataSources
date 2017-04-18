@@ -10,7 +10,7 @@ public protocol EditableCellDataSource {
     func editActions() -> [EditAction]
 }
 
-extension TableViewDataSource where
+public extension TableViewDataSource where
     Self: EditableCellDataSource & DataContainable & CellContainable,
     Self.Configurator: CellSelectable,
     Self.Configurator.Item == Self.Item

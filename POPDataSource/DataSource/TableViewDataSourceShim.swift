@@ -1,6 +1,6 @@
 import UIKit
 
-class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableViewDelegate {
+public class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableViewDelegate {
 
     weak var tableView: UITableView?
     var emptyView: UIView?
@@ -91,7 +91,7 @@ class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableViewDeleg
     }
 }
 
-class SegmentDataSourceShim: TableViewDataSourceShim {
+public class SegmentDataSourceShim: TableViewDataSourceShim {
     
     var selectedIndex: Int {
         get {

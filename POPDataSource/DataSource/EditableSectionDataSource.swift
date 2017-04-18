@@ -1,6 +1,6 @@
 import UIKit
 
-protocol EditebaleSection: class {
+public protocol EditebaleSection: class {
     var canEdit: Bool { get }
     var editing: Bool { get set }
     
@@ -9,14 +9,14 @@ protocol EditebaleSection: class {
     func setupObserving(_ section: EditebaleSectionView)
 }
 
-protocol EditebaleSectionView: class {
+public protocol EditebaleSectionView: class {
     weak var observer: EditebaleSection? { get set }
     
     func open()
     func close()
 }
 
-extension TableViewDataSource where Self: EditebaleSection {
+public extension TableViewDataSource where Self: EditebaleSection {
     
     func startEditing(_ section: EditebaleSectionView) {
         editing = true
