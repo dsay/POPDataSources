@@ -7,7 +7,7 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
     
     public var dataSource: TableViewDataSource {
         didSet {
-            tableView?.animationReload()
+            tableView?.reloadData()
         }
     }
     
@@ -124,7 +124,7 @@ open class SegmentDataSourceShim: TableViewDataSourceShim {
             dataSource = dataSources[index]
             emptyView = emptyViews?[index]
             
-            tableView?.animationReload()
+            tableView?.reloadData()
         }
     }
 }
