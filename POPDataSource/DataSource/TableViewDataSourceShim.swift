@@ -1,17 +1,17 @@
 import UIKit
 
-public class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableViewDelegate {
-
-    weak var tableView: UITableView?
-    var emptyView: UIView?
-
-    var dataSource: TableViewDataSource {
+open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableViewDelegate {
+    
+    public weak var tableView: UITableView?
+    public var emptyView: UIView?
+    
+    public var dataSource: TableViewDataSource {
         didSet {
             tableView?.animationReload()
         }
     }
     
-    init(dataSource: TableViewDataSource) {
+    public init(dataSource: TableViewDataSource) {
         self.dataSource = dataSource
     }
     
@@ -25,7 +25,7 @@ public class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableVi
         
         return section
     }
-
+    
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return dataSource.cellHeight(for: tableView, at: indexPath)
     }
@@ -37,7 +37,7 @@ public class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableVi
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return dataSource.cell(for: tableView, at: indexPath)
     }
-
+    
     open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return dataSource.headerTitle(for: tableView, in: section)
     }
@@ -86,14 +86,14 @@ public class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableVi
         return dataSource.canEditRow(for: tableView, at: indexPath)
     }
     
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    open func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         return dataSource.editActions(for: tableView, at: indexPath)
     }
 }
 
-public class SegmentDataSourceShim: TableViewDataSourceShim {
+open class SegmentDataSourceShim: TableViewDataSourceShim {
     
-    var selectedIndex: Int {
+    public var selectedIndex: Int {
         get {
             return _selectedIndex
         }
@@ -111,20 +111,19 @@ public class SegmentDataSourceShim: TableViewDataSourceShim {
     
     private var dataSources: [TableViewDataSource]
     private var _selectedIndex = 0
-
-    init(_ dataSources: [TableViewDataSource], emptyViews: [UIView]? = nil) {
+    
+    public init(_ dataSources: [TableViewDataSource], emptyViews: [UIView]? = nil) {
         self.dataSources = dataSources
         self.emptyViews = emptyViews
         super.init(dataSource: dataSources[0])
     }
     
-    func selectIndex(_ index: Int) {
-        
+    public func selectIndex(_ index: Int) {
         _selectedIndex = index
         if index >= 0 && index < dataSources.count {
             dataSource = dataSources[index]
             emptyView = emptyViews?[index]
-
+            
             tableView?.animationReload()
         }
     }

@@ -3,13 +3,13 @@ import UIKit
 /**
  *  Composed Data Source
  */
-public class ComposedDataSource:
+open class ComposedDataSource:
     TableViewDataSource,
     DataSourcesContainable
 {
     public var dataSources: [TableViewDataSource] = []
     
-    init(_ dataSources: [TableViewDataSource]) {
+    public init(_ dataSources: [TableViewDataSource]) {
         self.dataSources = dataSources
     }
 }
@@ -20,7 +20,7 @@ public class ComposedDataSource:
 public protocol DataSourcesContainable {
     
     typealias DataSource = TableViewDataSource
-
+    
     var dataSources: [DataSource] { get }
     
     func numberOfSections() -> Int
