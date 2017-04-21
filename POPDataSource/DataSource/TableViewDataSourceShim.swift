@@ -10,7 +10,7 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
             tableView?.reloadData()
         }
     }
-    
+
     public init(dataSource: TableViewDataSource) {
         self.dataSource = dataSource
     }
@@ -75,11 +75,11 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
     }
     
     open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        dataSource.willDisplayRow(in: tableView, at: indexPath)
+        dataSource.willDisplay(row: cell, in: tableView, at: indexPath)
     }
     
     open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        dataSource.willDisplayHeader(for: tableView, in: section)
+        dataSource.willDisplay(header: view, for: tableView, in: section)
     }
     
     open func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -93,7 +93,7 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
 
 open class SegmentDataSourceShim: TableViewDataSourceShim {
     
-    public var selectedIndex: Int {
+    private(set) var selectedIndex: Int {
         get {
             return _selectedIndex
         }

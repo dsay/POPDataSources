@@ -112,14 +112,14 @@ public extension TableViewDataSource where Self: DataSourcesContainable {
         dataSource.didUnhighlightRow(in: tableView, at: indexPath)
     }
     
-    func willDisplayRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath) {
         let dataSource = self.dataSource(at: indexPath.section)
-        dataSource.willDisplayRow(in: tableView, at: indexPath)
+        dataSource.willDisplay(row: row, in: tableView, at: indexPath)
     }
     
-    func willDisplayHeader(for tableView: UITableView, in section: Int) {
+    func willDisplay(header: UIView, for tableView: UITableView, in section: Int) {
         let dataSource = self.dataSource(at: section)
-        return dataSource.willDisplayHeader(for: tableView, in: section)
+        return dataSource.willDisplay(header: header, for: tableView, in: section)
     }
     
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {

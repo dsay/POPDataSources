@@ -36,9 +36,9 @@ public protocol TableViewDataSource {
     
     func didUnhighlightRow(in tableView: UITableView, at indexPath: IndexPath)
     
-    func willDisplayRow(in tableView: UITableView, at indexPath: IndexPath)
+    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath)
     
-    func willDisplayHeader(for tableView: UITableView, in section: Int)
+    func willDisplay(header: UIView, for tableView: UITableView, in section: Int)
     
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool
     
@@ -91,10 +91,10 @@ public extension TableViewDataSource {
     func didUnhighlightRow(in tableView: UITableView, at indexPath: IndexPath) {
     }
     
-    func willDisplayRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath) {
     }
     
-    func willDisplayHeader(for tableView: UITableView, in section: Int) {
+    func willDisplay(header: UIView, for tableView: UITableView, in section: Int){
     }
     
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {
