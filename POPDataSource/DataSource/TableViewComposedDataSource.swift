@@ -17,6 +17,10 @@ open class ComposedDataSource:
             dataSources[i] = newValue
         }
     }
+    
+    public init(_  dataSources: [TableViewDataSource] = []) {
+        self.dataSources = dataSources
+    }
 }
 
 /**
