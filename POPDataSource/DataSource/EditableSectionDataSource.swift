@@ -1,7 +1,6 @@
 import UIKit
 
 public protocol EditebaleSection: class {
-    var canEdit: Bool { get }
     var editing: Bool { get set }
     
     func startEditing(_ section: EditebaleSectionView)

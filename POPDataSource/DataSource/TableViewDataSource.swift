@@ -1,6 +1,8 @@
 import UIKit
 
 public protocol TableViewDataSource {
+    func emptyView() -> UIView
+    
     /**
      *  Base methods
      */
@@ -49,9 +51,12 @@ public protocol TableViewDataSource {
  *  Optional methods
  */
 public extension TableViewDataSource {
+    func emptyView() -> UIView {
+        return UIView()
+    }
     
     func numberOfSections(for tableView: UITableView) -> Int {
-        return 1
+        return 0
     }
     
     func cellHeight(for tableView: UITableView, at indexPath: IndexPath) -> CGFloat {

@@ -9,8 +9,13 @@ open class ComposedDataSource:
 {
     public var dataSources: [TableViewDataSource] = []
     
-    public init(_ dataSources: [TableViewDataSource]) {
-        self.dataSources = dataSources
+    public subscript(i: Int) -> TableViewDataSource {
+        get {
+            return dataSources[i]
+        }
+        set {
+            dataSources[i] = newValue
+        }
     }
 }
 
@@ -21,7 +26,7 @@ public protocol DataSourcesContainable {
     
     typealias DataSource = TableViewDataSource
     
-    var dataSources: [DataSource] { get }
+    var dataSources: [TableViewDataSource] { get }
     
     func numberOfSections() -> Int
     

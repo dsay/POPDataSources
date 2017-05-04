@@ -37,7 +37,11 @@ public extension TableViewDataSource where
     Self.Item == Self.Configurator.Item
 {
     typealias Cell = Self.Configurator.Cell
-
+    
+    func numberOfSections(for tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func numberOfRows(for tableView: UITableView, in section: Int) -> Int {
         return self.numberOfItems()
     }
@@ -113,7 +117,8 @@ public extension TableViewDataSource where
 }
 
 public extension TableViewDataSource where
-    Self: HeaderContainable, Self.Header: SectionSelectable,
+    Self: HeaderContainable,
+    Self.Header: SectionSelectable,
     Self.Header.SectionView: ReuseIdentifier
  {
     func willDisplay(header: UIView, for tableView: UITableView, in section: Int) {
