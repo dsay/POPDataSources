@@ -20,7 +20,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'POPDataSource', :git => 'https://github.com/dsay/POPDataSources.git', :tag => '0.1.2'
+    pod 'POPDataSource', :git => 'https://github.com/dsay/POPDataSources.git', :tag => '0.1.3'
 end
 ```
 
