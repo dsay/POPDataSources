@@ -38,7 +38,6 @@ extension DataSource.Action: Hashable, Equatable {
     }
 }
 
-
 /**
  *  Cell
  */

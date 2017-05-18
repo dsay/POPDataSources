@@ -1,6 +1,6 @@
 import UIKit
 
-open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableViewDelegate {
+open class TableViewDataSourceShim: NSObject {
     
     public weak var tableView: UITableView?
     
@@ -22,15 +22,49 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
             tableView?.hideEmptyView()
         }
     }
+}
+
+open class SegmentDataSourceShim: TableViewDataSourceShim {
+    
+    public var selectIndex: Int {
+        get {
+            return _selectedIndex
+        }
+        set {
+            selectIndex(newValue)
+        }
+    }
+    
+    public var dataSources: [TableViewDataSource] {
+        didSet {
+            selectIndex(0)
+        }
+    }
+    
+    public init(_ dataSources: [TableViewDataSource] = [], tableView: UITableView? = nil) {
+        self.dataSources = dataSources
+        super.init()
+        self.tableView = tableView
+        selectIndex(0)
+    }
+    
+    private var _selectedIndex = 0
+    
+    private func selectIndex(_ index: Int) {
+        _selectedIndex = index
+        if index >= 0 && index < dataSources.count {
+            dataSource = dataSources[index]
+            tableView?.reloadData()
+        }
+    }
+}
+
+extension TableViewDataSourceShim: UITableViewDataSource {
     
     open func numberOfSections(in tableView: UITableView) -> Int {
         let numberOfSections = dataSource.numberOfSections(for: tableView)
         emptyView(for: numberOfSections)
         return numberOfSections
-    }
-    
-    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return dataSource.cellHeight(for: tableView, at: indexPath)
     }
     
     open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,6 +81,21 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
     
     open func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return dataSource.footerTitle(for: tableView, in: section)
+    }
+    
+    open func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return dataSource.canEditRow(for: tableView, at: indexPath)
+    }
+    
+    open func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        return dataSource.editActions(for: tableView, at: indexPath)
+    }
+}
+
+extension TableViewDataSourceShim: UITableViewDelegate {
+    
+    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return dataSource.cellHeight(for: tableView, at: indexPath)
     }
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -83,50 +132,6 @@ open class TableViewDataSourceShim: NSObject, UITableViewDataSource, UITableView
     
     open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         dataSource.willDisplay(header: view, for: tableView, in: section)
-    }
-    
-    open func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return dataSource.canEditRow(for: tableView, at: indexPath)
-    }
-    
-    open func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        return dataSource.editActions(for: tableView, at: indexPath)
-    }
-}
-
-open class SegmentDataSourceShim: TableViewDataSourceShim {
-    
-    public var selectIndex: Int {
-        get {
-            return _selectedIndex
-        }
-        
-        set {
-            selectIndex(newValue)
-        }
-    }
-    
-    public var dataSources: [TableViewDataSource] {
-        didSet {
-            selectIndex(0)
-        }
-    }
-    
-    public init(_ dataSources: [TableViewDataSource] = [], tableView: UITableView? = nil) {
-        self.dataSources = dataSources
-        super.init()
-        self.tableView = tableView
-        selectIndex(0)
-    }
-    
-    private var _selectedIndex = 0
-    
-    private func selectIndex(_ index: Int) {
-        _selectedIndex = index
-        if index >= 0 && index < dataSources.count {
-            dataSource = dataSources[index]
-            tableView?.reloadData()
-        }
     }
 }
 

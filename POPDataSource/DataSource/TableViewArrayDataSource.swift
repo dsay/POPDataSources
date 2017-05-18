@@ -53,8 +53,9 @@ public extension TableViewDataSource where
     func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
         let item = self.item(at: indexPath.row)
         guard let configurator = self.cellConfigurator,
-            let cell = tableView.dequeueReusableCell(withIdentifier: configurator.reuseIdentifier()) as? Cell else {
-                fatalError("Cell didn't register!!!")
+            let cell = tableView.dequeueReusableCell(withIdentifier: configurator.reuseIdentifier()) as? Cell else
+        {
+            fatalError("Cell didn't register!!! \n" + Cell.description())
         }
         configurator.configurateCell(cell, item: item, at: indexPath)
         return cell
@@ -98,16 +99,15 @@ public extension TableViewDataSource where
     }
     
     func headerView(for tableView: UITableView, in section: Int) -> UIView? {
-        
-        if let sectionValue = self.header,
+        guard let sectionValue = self.header,
             case .view(let configurator) = sectionValue.section(),
-            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as? HeaderView
+            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as? HeaderView else
         {
-            configurator(view, section)
-            return view
+            return nil
         }
         
-        return nil
+        configurator(view, section)
+        return view
     }
     
     private func height(_ view: UIView,in section: Int) -> CGFloat {
@@ -166,15 +166,15 @@ public extension TableViewDataSource where
     }
     
     func footerView(for tableView: UITableView, in section: Int) -> UIView? {
-        if let sectionValue = self.footer,
+        guard let sectionValue = self.footer,
             case .view(let configurator) = sectionValue.section(),
-            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: FooterView.identifier) as? FooterView
+            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: FooterView.identifier) as? FooterView else
         {
-            configurator(view, section)
-            return view
+            return nil
         }
         
-        return nil
+        configurator(view, section)
+        return view
     }
     
     private func height(_ view: UIView,in section: Int) -> CGFloat {
@@ -234,7 +234,7 @@ public extension TableViewDataSource where
         let item = self.item(at: indexPath.row)
 
         guard let cell = tableView.cellForRow(at: indexPath) as? Cell else {
-            fatalError("cell no found")
+            fatalError("Cell no found")
         }
         return (cell, item)
     }

@@ -26,8 +26,8 @@ public extension UITableView {
 }
 
 public class EmptyView : UIView, ReuseIdentifier {
+    
 }
-
 
 public class ActionHandleButton : UIButton {
     

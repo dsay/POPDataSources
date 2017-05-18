@@ -25,7 +25,7 @@ public extension TableViewDataSource where
     }
     
     private func retrive(_ editAction: EditAction,_ tableView: UITableView) -> UITableViewRowAction {
-        let action =  UITableViewRowAction(style: .normal, title: editAction.title)
+        let action = UITableViewRowAction(style: .normal, title: editAction.title)
         { (action, indexPath) in
             let attributes = self.attributes(in: tableView, at: indexPath)
             if let selector = self.cellConfigurator?.selectors[editAction.action] {
