@@ -34,7 +34,7 @@ s.source = { :git => "https://github.com/dsay/POPDataSources.git", :tag => "#{s.
 
 s.framework = "UIKit"
 
-s.swift-version = "4.0"
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 s.source_files = "POPDataSource/**/*.{swift}"
 
