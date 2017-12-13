@@ -18,7 +18,7 @@ open class ComposedDataSource:
         }
     }
     
-    public init(_  dataSources: [TableViewDataSource] = []) {
+    public init(_ dataSources: [TableViewDataSource] = []) {
         self.dataSources = dataSources
     }
 }

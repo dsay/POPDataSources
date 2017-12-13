@@ -33,7 +33,7 @@ public class ActionHandleButton : UIButton {
     
     private var action: (() -> Void)?
     
-    internal func triggerActionHandleBlock() {
+    @objc internal func triggerActionHandleBlock() {
         self.action?()
     }
     

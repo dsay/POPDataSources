@@ -14,7 +14,7 @@ public extension TableViewDataSource where
     Self: EditableCellDataSource & DataContainable & CellContainable,
     Self.Configurator: CellSelectable,
     Self.Configurator.Item == Self.Item
- {
+{
     
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {
         return true

@@ -232,7 +232,6 @@ public extension TableViewDataSource where
     
     private func attributes(in tableView: UITableView, at indexPath: IndexPath) -> (cell: Cell, item: Item) {
         let item = self.item(at: indexPath.row)
-
         guard let cell = tableView.cellForRow(at: indexPath) as? Cell else {
             fatalError("Cell no found")
         }

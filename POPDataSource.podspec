@@ -10,7 +10,7 @@ s.summary = "Protocol oriented programming. Data source for uitableview."
 
 s.requires_arc = true
 
-s.version = "0.1.3"
+s.version = "0.1.4"
 
 s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
 Licensed under the Apache License, Version 2.0 (the "License");

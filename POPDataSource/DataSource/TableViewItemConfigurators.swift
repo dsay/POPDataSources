@@ -59,6 +59,13 @@ public protocol CellConfigurator {
     func configurateCell(_ cell: Cell, item: Item, at indexPath: IndexPath)
 }
 
+public extension CellConfigurator where Cell: ReuseIdentifier {
+    
+    func reuseIdentifier() -> String {
+        return Cell.identifier
+    }
+}
+
 /**
  * Selectable Cell
  */

@@ -1,16 +1,29 @@
 import UIKit
 
+fileprivate enum Section: Int {
+    case header, footer
+}
+
 open class TableViewDataSourceShim: NSObject {
     
     public weak var tableView: UITableView?
-    
+
     public var dataSource: TableViewDataSource {
         didSet {
-           tableView?.reloadData()
+            tableView?.reloadData()
+            
+            rowCache.removeAll()
+            headerCache.removeAll()
+            footerCache.removeAll()
         }
     }
     
-    public init(_ dataSource: TableViewDataSource = EmptyDataSource(), tableView: UITableView? = nil) {
+    private var rowCache = [IndexPath: CGFloat]()
+    
+    private var headerCache = [Int: CGFloat]()
+    private var footerCache = [Int: CGFloat]()
+    
+    public init(_ dataSource: TableViewDataSource, tableView: UITableView? = nil) {
         self.dataSource = dataSource
         self.tableView = tableView
     }
@@ -22,10 +35,28 @@ open class TableViewDataSourceShim: NSObject {
             tableView?.hideEmptyView()
         }
     }
+    
+    fileprivate subscript (i: Int, section: Section) -> CGFloat? {
+        get {
+            return (section == .header) ? headerCache[i] : footerCache[i]
+        }
+        set {
+            if section == .header { headerCache[i] = newValue } else { footerCache[i] = newValue }
+        }
+    }
+    
+    fileprivate subscript (cell: IndexPath) -> CGFloat? {
+        get {
+            return rowCache[cell]
+        }
+        set {
+            rowCache[cell] = newValue
+        }
+    }
 }
 
 open class SegmentDataSourceShim: TableViewDataSourceShim {
-    
+
     public var selectIndex: Int {
         get {
             return _selectedIndex
@@ -41,14 +72,17 @@ open class SegmentDataSourceShim: TableViewDataSourceShim {
         }
     }
     
-    public init(_ dataSources: [TableViewDataSource] = [], tableView: UITableView? = nil) {
+    private var _selectedIndex = 0
+    
+    public init(_ dataSources: [TableViewDataSource], tableView: UITableView? = nil) {
+        guard let dataSource = dataSources.last else {
+            fatalError("DataSeources can't be empty please use EmptyDataSource!")
+        }
         self.dataSources = dataSources
-        super.init()
+        super.init(dataSource)
         self.tableView = tableView
         selectIndex(0)
     }
-    
-    private var _selectedIndex = 0
     
     private func selectIndex(_ index: Int) {
         _selectedIndex = index
@@ -94,18 +128,6 @@ extension TableViewDataSourceShim: UITableViewDataSource {
 
 extension TableViewDataSourceShim: UITableViewDelegate {
     
-    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return dataSource.cellHeight(for: tableView, at: indexPath)
-    }
-    
-    open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return dataSource.headerHeight(for: tableView, in: section)
-    }
-    
-    open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return dataSource.footerHeight(for: tableView, in: section)
-    }
-    
     open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return dataSource.headerView(for: tableView, in: section)
     }
@@ -133,15 +155,43 @@ extension TableViewDataSourceShim: UITableViewDelegate {
     open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         dataSource.willDisplay(header: view, for: tableView, in: section)
     }
+    
+    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self[indexPath] ?? dataSource.cellHeight(for: tableView, at: indexPath)
+    }
+    
+    open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return self[section, .header] ?? dataSource.headerHeight(for: tableView, in: section)
+    }
+    
+    open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return self[section, .footer] ?? dataSource.footerHeight(for: tableView, in: section)
+    }
+    
+    open func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        self[indexPath] = cell.bounds.height
+    }
+    
+    open func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
+        if view.bounds.height >= 1 {
+             self[section, .header] = view.bounds.height
+        }
+    }
+    
+    open func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
+        if view.bounds.height >= 1 {
+            self[section, .footer] = view.bounds.height
+        }
+    }
 }
 
-fileprivate struct EmptyDataSource: TableViewDataSource {
+public struct EmptyDataSource: TableViewDataSource {
     
-    func numberOfRows(for tableView: UITableView, in section: Int) -> Int {
+    public func numberOfRows(for tableView: UITableView, in section: Int) -> Int {
         return 0
     }
     
-    func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
+    public func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
 }
