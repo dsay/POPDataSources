@@ -34,6 +34,8 @@ s.source = { :git => "https://github.com/dsay/POPDataSources.git", :tag => "#{s.
 
 s.framework = "UIKit"
 
+s.swift-version = "4.0"
+
 s.source_files = "POPDataSource/**/*.{swift}"
 
 #s.resources = "POPDataSource/**/*.{png,jpeg,jpg,storyboard,xib}"
