@@ -14,7 +14,7 @@ public protocol TableViewDataSource {
 
     func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell
     
-    /**
+    /**pod
      *  Section configurator methods
      */
     func headerTitle(for tableView: UITableView, in section: Int) -> String?
