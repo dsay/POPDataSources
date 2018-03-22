@@ -6,7 +6,7 @@ import UIKit
 open class ComposedDataSource:
     TableViewDataSource,
     DataSourcesContainable
-{
+{ 
     public var dataSources: [TableViewDataSource] = []
     
     public subscript(i: Int) -> TableViewDataSource {
@@ -57,13 +57,13 @@ public extension DataSourcesContainable {
  */
 public extension TableViewDataSource where Self: DataSourcesContainable {
     
-    func numberOfSections(for tableView: UITableView) -> Int {
+    func numberOfSections<T: CollectableView>(for collectionView: T) -> Int {
         return self.numberOfSections()
     }
     
-    func numberOfRows(for tableView: UITableView, in section: Int) -> Int {
+    func numberOfRows<T: CollectableView>(for collectionView: T, in section: Int) -> Int {
         let dataSource = self.dataSource(at: section)
-        return dataSource.numberOfRows(for: tableView, in: section)
+        return dataSource.numberOfRows(for: collectionView, in: section)
     }
     
     func cellHeight(for tableView: UITableView, at indexPath: IndexPath) -> CGFloat {
@@ -71,9 +71,9 @@ public extension TableViewDataSource where Self: DataSourcesContainable {
         return dataSource.cellHeight(for: tableView, at: indexPath)
     }
     
-    func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
+    func cell<T: CollectableView>(for collectionView: T, at indexPath: IndexPath) -> T.CollectionCell {
         let dataSource = self.dataSource(at: indexPath.section)
-        return dataSource.cell(for: tableView, at: indexPath)
+        return dataSource.cell(for: collectionView, at: indexPath)
     }
     
     func headerTitle(for tableView: UITableView, in section: Int) -> String? {
@@ -106,24 +106,24 @@ public extension TableViewDataSource where Self: DataSourcesContainable {
         return dataSource.footerView(for: tableView, in: section)
     }
     
-    func didSelectRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func didSelectRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath) {
         let dataSource = self.dataSource(at: indexPath.section)
-        dataSource.didSelectRow(in: tableView, at: indexPath)
+        dataSource.didSelectRow(in: collectionView, at: indexPath)
     }
     
-    func didHighlightRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func didHighlightRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath) {
         let dataSource = self.dataSource(at: indexPath.section)
-        dataSource.didHighlightRow(in: tableView, at: indexPath)
+        dataSource.didHighlightRow(in: collectionView, at: indexPath)
     }
     
-    func didUnhighlightRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func didUnhighlightRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath) {
         let dataSource = self.dataSource(at: indexPath.section)
-        dataSource.didUnhighlightRow(in: tableView, at: indexPath)
+        dataSource.didUnhighlightRow(in: collectionView, at: indexPath)
     }
     
-    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath) {
+    func willDisplay<T: CollectableView>(row: T.CollectionCell, in collectionView: T, at indexPath: IndexPath) {
         let dataSource = self.dataSource(at: indexPath.section)
-        dataSource.willDisplay(row: row, in: tableView, at: indexPath)
+        dataSource.willDisplay(row: row, in: collectionView, at: indexPath)
     }
     
     func willDisplay(header: UIView, for tableView: UITableView, in section: Int) {

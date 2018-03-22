@@ -1,18 +1,62 @@
 import UIKit
 
-public protocol TableViewDataSource {
+public protocol CollectableCell {
+    associatedtype CollectionCell
+}
+
+public protocol CollectableView: CollectableCell {
+    
+    func dequeueReusableCollectionCell(withIdentifier identifier: String, for indexPath: IndexPath) -> CollectionCell?
+    
+}
+
+extension UITableView: CollectableView {
+    public typealias CollectionCell = UITableViewCell
+    
+    public func dequeueReusableCollectionCell(withIdentifier identifier: String) -> UITableViewCell? {
+        return self.dequeueReusableCell(withIdentifier: identifier)
+    }
+    
+    public func dequeueReusableCollectionCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UITableViewCell? {
+        return self.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+    }
+}
+
+extension UICollectionView: CollectableView {
+    public typealias CollectionCell = UICollectionViewCell
+    
+    public func dequeueReusableCollectionCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell? {
+        return self.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
+    }
+}
+
+public protocol CollectionDataSource {
+    
+    func numberOfSections<T: CollectableView>(for collectionView: T) -> Int
+    
+    func numberOfRows<T: CollectableView>(for collectionView: T, in section: Int) -> Int
+    
+    func cell<T: CollectableView>(for collectionView: T, at indexPath: IndexPath) -> T.CollectionCell
+    
+    func didSelectRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath)
+    
+    func didHighlightRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath)
+    
+    func didUnhighlightRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath)
+    
+    func willDisplay<T: CollectableView>(row: T.CollectionCell, in collectionView: T, at indexPath: IndexPath)
+}
+
+public protocol TableViewDataSource: CollectionDataSource {
     func emptyView() -> UIView
     
     /**
      *  Base methods
      */
-    func numberOfSections(for tableView: UITableView) -> Int
-    
-    func numberOfRows(for tableView: UITableView, in section: Int) -> Int
     
     func cellHeight(for tableView: UITableView, at indexPath: IndexPath) -> CGFloat
 
-    func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell
+//    func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell
     
     /**pod
      *  Section configurator methods
@@ -32,13 +76,8 @@ public protocol TableViewDataSource {
     /**
      *  Selectors
      */
-    func didSelectRow(in tableView: UITableView, at indexPath: IndexPath)
-    
-    func didHighlightRow(in tableView: UITableView, at indexPath: IndexPath)
-    
-    func didUnhighlightRow(in tableView: UITableView, at indexPath: IndexPath)
-    
-    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath)
+
+//    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath)
     
     func willDisplay(header: UIView, for tableView: UITableView, in section: Int)
     
@@ -55,9 +94,13 @@ public extension TableViewDataSource {
         return UIView()
     }
     
-    func numberOfSections(for tableView: UITableView) -> Int {
+    func numberOfSections<T: CollectableView>(for collectionView: T) -> Int {
         return 0
     }
+    
+//    func numberOfSections(for tableView: UITableView) -> Int {
+//        return 0
+//    }
     
     func cellHeight(for tableView: UITableView, at indexPath: IndexPath) -> CGFloat {
         return 0
@@ -87,16 +130,17 @@ public extension TableViewDataSource {
         return nil
     }
     
-    func didSelectRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func didSelectRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath) {
+        
     }
     
-    func didHighlightRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func didHighlightRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath) {
     }
     
-    func didUnhighlightRow(in tableView: UITableView, at indexPath: IndexPath) {
+    func didUnhighlightRow<T: CollectableView>(in collectionView: T, at indexPath: IndexPath) {
     }
     
-    func willDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath) {
+    func willDisplay<T: CollectableView>(row: T.CollectionCell, in collectionView: T, at indexPath: IndexPath) {
     }
     
     func willDisplay(header: UIView, for tableView: UITableView, in section: Int){

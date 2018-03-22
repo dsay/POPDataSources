@@ -50,19 +50,19 @@ public protocol CellContainable {
 /**
  *  Cell configurator
  */
-public protocol CellConfigurator {
+public protocol CellConfigurator: CollectableCell {
     associatedtype Item
-    associatedtype Cell: UITableViewCell
+//    associatedtype Cell: UITableViewCell
 
     func reuseIdentifier() -> String
     
-    func configurateCell(_ cell: Cell, item: Item, at indexPath: IndexPath)
+    func configurateCell(_ cell: CollectionCell, item: Item, at indexPath: IndexPath)
 }
 
-public extension CellConfigurator where Cell: ReuseIdentifier {
+public extension CellConfigurator where CollectionCell: ReuseIdentifier {
     
     func reuseIdentifier() -> String {
-        return Cell.identifier
+        return CollectionCell.identifier
     }
 }
 
@@ -71,7 +71,7 @@ public extension CellConfigurator where Cell: ReuseIdentifier {
  */
 public protocol CellSelectable: CellConfigurator {
     
-    typealias Handler = (Cell, IndexPath, Item) -> ()
+    typealias Handler = (CollectionCell, IndexPath, Item) -> ()
     
     var selectors: [DataSource.Action: Handler] { get set }
 }

@@ -36,13 +36,13 @@ public extension TableViewDataSource where
     Self: CellContainable,
     Self.Item == Self.Configurator.Item
 {
-    typealias Cell = Self.Configurator.Cell
+    typealias Cell = Self.Configurator.CollectionCell
     
-    func numberOfSections(for tableView: UITableView) -> Int {
+    func numberOfSections<T: CollectableView>(for collectionView: T) -> Int {
         return 1
     }
     
-    func numberOfRows(for tableView: UITableView, in section: Int) -> Int {
+    func numberOfRows<T: CollectableView>(for collectionView: T, in section: Int) -> Int {
         return self.numberOfItems()
     }
     
@@ -50,15 +50,15 @@ public extension TableViewDataSource where
         return UITableViewAutomaticDimension
     }
     
-    func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
+    func cell<T: CollectableView>(for collectionView: T, at indexPath: IndexPath) -> T.CollectionCell {
         let item = self.item(at: indexPath.row)
         guard let configurator = self.cellConfigurator,
-            let cell = tableView.dequeueReusableCell(withIdentifier: configurator.reuseIdentifier()) as? Cell else
+            let cell = collectionView.dequeueReusableCollectionCell(withIdentifier: configurator.reuseIdentifier(), for: indexPath) as? Cell else
         {
-            fatalError("Cell didn't register!!! \n" + Cell.description())
+            fatalError("Cell didn't register!!! \n")
         }
         configurator.configurateCell(cell, item: item, at: indexPath)
-        return cell
+        return cell as! T.CollectionCell
     }
 }
 

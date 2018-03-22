@@ -187,11 +187,11 @@ extension TableViewDataSourceShim: UITableViewDelegate {
 
 public struct EmptyDataSource: TableViewDataSource {
     
-    public func numberOfRows(for tableView: UITableView, in section: Int) -> Int {
+    public func numberOfRows<T: CollectableView>(for collectionView: T, in section: Int) -> Int {
         return 0
     }
     
-    public func cell(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    public func cell<T: CollectableView>(for collectionView: T, at indexPath: IndexPath) -> T.CollectionCell {
+        return UITableViewCell() as! T.CollectionCell
     }
 }
