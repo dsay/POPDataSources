@@ -187,6 +187,10 @@ extension TableViewDataSourceShim: UITableViewDelegate {
 
 public struct EmptyDataSource: TableViewDataSource {
     
+    public func cellHeight(for tableView: UITableView, at indexPath: IndexPath) -> CGFloat {
+        return 0
+    }
+    
     public func numberOfRows<T: CollectableView>(for collectionView: T, in section: Int) -> Int {
         return 0
     }
