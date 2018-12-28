@@ -4,6 +4,12 @@ public struct EditAction {
     let action: DataSource.Action
     let title: String
     let color: UIColor
+    
+    public init(action: DataSource.Action, title: String, color: UIColor) {
+        self.action = action
+        self.title = title
+        self.color = color
+    }
 }
 
 public protocol EditableCellDataSource {
