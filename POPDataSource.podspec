@@ -10,7 +10,7 @@ s.summary = "Protocol oriented programming. Data source for uitableview."
 
 s.requires_arc = true
 
-s.version = "0.1.4"
+s.version = "0.2.0"
 
 s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ s.source = { :git => "https://github.com/dsay/POPDataSources.git", :tag => "#{s.
 
 s.framework = "UIKit"
 
-s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
 s.source_files = "POPDataSource/**/*.{swift}"
 
