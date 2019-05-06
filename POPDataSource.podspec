@@ -7,36 +7,33 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'POPDataSource'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of POPDataSource.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/dsay/POPDataSource'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'dsay' => 'dsay@ciklum.com' }
-  s.source           = { :git => 'https://github.com/dsay/POPDataSource.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'POPDataSource/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'POPDataSource' => ['POPDataSource/Assets/*.png']
-  # }
+  s.platform = :ios
+  
+  s.ios.deployment_target = '11.0'
+  
+  s.name = "POPDataSource"
+  
+  s.summary = "Protocol oriented programming. Data source for uitableview."
+  
+  s.requires_arc = true
+  
+  s.version = "0.2.2"
+  
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.author = { "Dima Sai" => "dmitriy.sai2013@gmail.com" }
+  
+  s.homepage = 'https://github.com/dsay/POPDataSource'
+
+  s.source = { :git => 'https://github.com/dsay/POPDataSource.git', :tag => s.version.to_s }
+  s.framework = "UIKit"
+  
+  #s.swift_version = "5.0"
+  
+  s.source_files = "POPDataSource/Classes/**/*.{swift}"
+  
+  #s.resources = "POPDataSource/**/*.{png,jpeg,jpg,storyboard,xib}"
+  
 end
+#pod trunk push /Users/user/Desktop/prog/POPDataSource/vendor/POPDataSources/POPDataSource.podspec --swift-version=4.2

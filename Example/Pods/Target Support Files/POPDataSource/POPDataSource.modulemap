@@ -1,0 +1,6 @@
+framework module POPDataSource {
+  umbrella header "POPDataSource-umbrella.h"
+
+  export *
+  module * { export * }
+}

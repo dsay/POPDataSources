@@ -1,0 +1,16 @@
+PODS:
+  - POPDataSource (0.2.2)
+
+DEPENDENCIES:
+  - POPDataSource (from `../`)
+
+EXTERNAL SOURCES:
+  POPDataSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  POPDataSource: a0462a85768f800c057e7f5ac7c7580268966a8a
+
+PODFILE CHECKSUM: 55f59ceed78c5b689561da1e01bf31f19f402965
+
+COCOAPODS: 1.6.1
