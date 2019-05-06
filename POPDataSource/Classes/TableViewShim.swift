@@ -88,11 +88,11 @@ extension TableViewDataSourceShim: UITableViewDataSource {
     }
     
     open func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        return nil
+        return dataSource.trailingSwipeActions(for: tableView, at: indexPath)
     }
     
     open func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-       return nil
+        return dataSource.leadingSwipeActions(for: tableView, at: indexPath)
     }
 }
 
@@ -124,10 +124,6 @@ extension TableViewDataSourceShim: UITableViewDelegate {
     
     open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         dataSource.willDisplay(header: view, for: tableView, in: section)
-    }
-    
-    open func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-        dataSource.willDisplay(footer: view, for: tableView, in: section)
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

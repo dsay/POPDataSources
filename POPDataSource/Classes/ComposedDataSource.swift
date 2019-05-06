@@ -131,11 +131,6 @@ public extension TableViewDataSource where Self: DataSourcesContainable {
         return dataSource.willDisplay(header: header, for: tableView, in: section)
     }
     
-    func willDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
-        let dataSource = self.dataSource(at: section)
-        return dataSource.willDisplay(footer: footer, for: tableView, in: section)
-    }
-    
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {
         let dataSource = self.dataSource(at: indexPath.section)
         return dataSource.canEditRow(for: tableView, at: indexPath)

@@ -12,7 +12,9 @@ struct GenresDataSource:
     TableViewDataSource,
     DataContainable,
     CellContainable,
-    CellConfigurator
+    CellConfigurator,
+    EditableCellDataSource,
+    CellSelectable
 {
     /**
      *  Data Containable protocol
@@ -24,6 +26,19 @@ struct GenresDataSource:
      */
     func reuseIdentifier() -> String {
         return "genreAlbumCell"
+    }
+    
+    var selectors: [DataSource
+        .Action: (UITableViewCell, IndexPath, Genre) -> ()] = [:]
+    
+    func leadingActions() -> [EditAction] {
+        return []
+        
+    }
+    
+    func trailingActions() -> [EditAction] {
+        return [EditAction(action: .select, title: "Edit", color: .red, image: nil),
+                EditAction(action: .edit, title: "Edit", color: .yellow, image: nil)]
     }
     
     func configurateCell(_ cell: UITableViewCell, item: Genre, at indexPath: IndexPath) {

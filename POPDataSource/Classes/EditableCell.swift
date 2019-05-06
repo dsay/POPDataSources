@@ -32,11 +32,11 @@ public extension TableViewDataSource where
     func trailingSwipeActions(for tableView: UITableView, at indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         return UISwipeActionsConfiguration(actions: trailingActions().map { retrive($0, tableView, indexPath) })
     }
-    
+
     func leadingSwipeActions(for tableView: UITableView, at indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         return UISwipeActionsConfiguration(actions: leadingActions().map { retrive($0, tableView, indexPath) })
     }
-    
+
     private func retrive(_ editAction: EditAction, _ tableView: UITableView, _ indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .normal, title: editAction.title, handler: { action, cell, actionPerformed in
             let attributes = self.attributes(in: tableView, at: indexPath)
@@ -46,7 +46,7 @@ public extension TableViewDataSource where
         })
         action.image = editAction.image
         action.backgroundColor = editAction.color
-        
+
         return action
     }
     

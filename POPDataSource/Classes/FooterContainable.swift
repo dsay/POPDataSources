@@ -50,16 +50,3 @@ public extension TableViewDataSource where
         return view.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
     }
 }
-
-public extension TableViewDataSource where
-    Self: FooterContainable,
-    Self.Footer: SectionSelectable,
-    Self.Footer.SectionView: ReuseIdentifier
-{
-    func willDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
-        if let headerView = footer as? FooterView,
-            let selector = self.footer?.selectors[.willDisplayFooter] {
-            selector(headerView, section)
-        }
-    }
-}
