@@ -91,7 +91,8 @@ class AlbumsDataSource:
     DataContainable,
     Collapsible,
     CellContainable,
-    HeaderContainable
+    HeaderContainable,
+    DataFilterable
 {
     /**
      *  Setup Collapsible protocol
@@ -112,6 +113,12 @@ class AlbumsDataSource:
      *  Cell
      */
     var cellConfigurator: AlbumsCellConfigurator? = AlbumsCellConfigurator()
+    
+    /**
+     *  Setup Data Filterable protocol
+     */
+    var filteredData: [Album] = []
+    var filterAction: ((Album) -> Album?)?
 }
 
 struct AlbumsCellConfigurator: CellConfigurator, CellSelectable {

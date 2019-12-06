@@ -79,3 +79,43 @@ public extension UITableView {
     }
 }
 
+public extension UITableView {
+    
+    func filter<T: DataFilterable>(_ dataSource: T, at section: Int = 0) {
+        let origin = dataSource.filteredData
+        dataSource.filter()
+        let diff = origin.changes(to: dataSource.filteredData)
+        let deleted = diff.removed.map({ IndexPath(row: $0, section: section)})
+        let inserted = diff.inserted.map({ IndexPath(row: $0, section: section)})
+        beginUpdates()
+        if !deleted.isEmpty { deleteRows(at: deleted, with: .automatic) }
+        if !inserted.isEmpty { insertRows(at: inserted, with: .automatic) }
+        endUpdates()
+    }
+    
+}
+
+private extension Array where Element: Equatable {
+    
+    func changes(to other: [Element]) ->  (removed: [Int], inserted: [Int])  {
+        let otherEnumerated = other.enumerated()
+        let selfEnumerated = enumerated()
+        let leftCombinations = selfEnumerated.compactMap({ item in
+            return (item, otherEnumerated.first(where: { $0.element == item.element }))
+        })
+        let removedIndexes = leftCombinations.filter { combination -> Bool in
+            combination.1 == nil
+        }.compactMap { combination in
+            combination.0.offset
+        }
+        let rightCombinations = other.enumerated().compactMap({ item in
+            (selfEnumerated.first(where: { $0.element == item.element }), item)
+        })
+        let insertedIndexes = rightCombinations.filter { combination -> Bool in
+            combination.0 == nil
+        }.compactMap { combination in
+            combination.1.offset
+        }
+        return (removedIndexes, insertedIndexes)
+    }
+}

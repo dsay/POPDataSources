@@ -308,15 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-POPDataSource_Example/Pods-POPDataSource_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/POPDataSource/POPDataSource.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/POPDataSource.framework",
 			);
