@@ -81,10 +81,12 @@ public extension UITableView {
 
 public extension UITableView {
     
-    func filter<T: DataFilterable>(_ dataSource: T, at section: Int = 0) {
-        let origin = dataSource.filteredData
-        dataSource.filter()
-        let diff = origin.changes(to: dataSource.filteredData)
+    func filter<T: DataFilterable>(_ dataSource: T, at section: Int = 0, action: () -> Void ) {
+        let origin = dataSource.filtered()
+        
+        action()
+
+        let diff = origin.changes(to: dataSource.filtered())
         let deleted = diff.removed.map({ IndexPath(row: $0, section: section)})
         let inserted = diff.inserted.map({ IndexPath(row: $0, section: section)})
         beginUpdates()

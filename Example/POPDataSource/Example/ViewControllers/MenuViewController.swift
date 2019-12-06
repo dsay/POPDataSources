@@ -35,14 +35,14 @@ class MenuViewController: UITableViewController {
                 
             case "showCollapsible":
                 let albums = AlbumsDataSource()
-                albums.header?.on(.custom(Actions.Album.onSection)) {
-                    [weak controller = destinationController, unowned albums] (header, index) in
-                    if albums.open {
-                        controller?.tableView.collapse(albums)
-                    } else {
-                        controller?.tableView.expand(albums)
-                    }
-                }
+//                albums.header?.on(.custom(Actions.Album.onSection)) {
+//                    [weak controller = destinationController, unowned albums] (header, index) in
+//                    if albums.open {
+//                        controller?.tableView.collapse(albums)
+//                    } else {
+//                        controller?.tableView.expand(albums)
+//                    }
+//                }
                 destinationController.shim = TableViewDataSourceShim(albums)
                 
             case "showFilterable":
@@ -57,49 +57,26 @@ class MenuViewController: UITableViewController {
     }
     
     // MARK: - Filter logic
-    
-    func toggleStateForAlbum(_ album: Album, at index: IndexPath) {
-        let id = album.id
-        if hiddenCellIds[id] == nil {
-            hiddenCellIds[id] = index
-        } else {
-            hiddenCellIds[id] = nil
-        }
-    }
-    
-    func removeFromHiddenAll(in section: Int) {
-        hiddenCellIds = hiddenCellIds.filter({ (_, index) -> Bool in
-            return index.section != section
-        })
-    }
+
     
     func createDataSource(destinationController: TableViewController) -> AlbumsDataSource {
         let dataSource = AlbumsDataSource()
         
-        dataSource.cellConfigurator?.on(.willDisplay) { cell, index, item in
-            print("tap on cell")
-        }
-        
-        dataSource.cellConfigurator?.on(.custom(Actions.Album.onButton)) { [weak self, weak dataSource, weak destinationController] cell, index, item in
-            print("tap on button in cell")
+        dataSource.cellConfigurator?.on(.custom(Actions.Album.onButton)) { [weak dataSource, weak destinationController] cell, index, item in
             guard let ds = dataSource else { return }
-            self?.toggleStateForAlbum(item, at: index)
-            destinationController?.tableView.filter(ds, at: index.section)
+
+            destinationController?.tableView.filter(ds, at: index.section) {
+                dataSource?.toggleState(for: item, at: index)
+            }
         }
         
-        dataSource.header?.on(.custom(Actions.Album.onSection)) { [weak self, weak dataSource, weak destinationController] header, index in
-            print("tap on button in section header")
+        dataSource.header?.on(.custom(Actions.Album.onSection)) { [weak dataSource, weak destinationController] header, index in
             guard let ds = dataSource else { return }
-            self?.removeFromHiddenAll(in: index)
-            destinationController?.tableView.filter(ds, at: index)
+            
+            destinationController?.tableView.filter(ds, at: index) {
+                dataSource?.showAll()
+            }
         }
-        
-        dataSource.filterAction = { [weak self] item in
-            guard let sself = self else { return nil }
-            let it = sself.hiddenCellIds[item.id] == nil ? item : nil
-            return it
-        }
-        dataSource.filter()
         return dataSource
     }
     
@@ -111,4 +88,19 @@ extension Album {
         return "\(name)_\(artistName)"
     }
     
+}
+
+extension DataFilterable {
+    
+    func toggleState(for item: Item, at index: IndexPath) {
+        if hiddenItems[item] == nil {
+            hiddenItems[item] = index
+        } else {
+            hiddenItems[item] = nil
+        }
+    }
+    
+    func showAll() {
+        hiddenItems.removeAll()
+    }
 }

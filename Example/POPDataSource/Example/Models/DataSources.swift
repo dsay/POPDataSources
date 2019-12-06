@@ -84,12 +84,10 @@ extension Artist:
     }
 }
 
-
-
 class AlbumsDataSource:
     TableViewDataSource,
     DataContainable,
-    Collapsible,
+//    Collapsible,
     CellContainable,
     HeaderContainable,
     DataFilterable
@@ -97,7 +95,7 @@ class AlbumsDataSource:
     /**
      *  Setup Collapsible protocol
      */
-    var open = true
+//    var open = true
     
     /**
      *  Setup Data Containable protocol
@@ -117,8 +115,7 @@ class AlbumsDataSource:
     /**
      *  Setup Data Filterable protocol
      */
-    var filteredData: [Album] = []
-    var filterAction: ((Album) -> Album?)?
+    var hiddenItems: [Item: IndexPath] = [:]
 }
 
 struct AlbumsCellConfigurator: CellConfigurator, CellSelectable {

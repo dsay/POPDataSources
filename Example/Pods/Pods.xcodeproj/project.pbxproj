@@ -58,20 +58,20 @@
 		6E39C4DBED03CBCDB3A640FE2925E232 /* Pods-POPDataSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-POPDataSource_Example.modulemap"; sourceTree = "<group>"; };
 		701BB5F517740AD3D7812640FA58E32C /* DataFilterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataFilterable.swift; path = POPDataSource/Classes/DataFilterable.swift; sourceTree = "<group>"; };
 		7330FA5FDD4BB1DD8F99F5C37D37239B /* DataContainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataContainable.swift; path = POPDataSource/Classes/DataContainable.swift; sourceTree = "<group>"; };
-		74508AF5164E2D79D6D71D2578826530 /* POPDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = POPDataSource.framework; path = POPDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74508AF5164E2D79D6D71D2578826530 /* POPDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = POPDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F9B37783B6751555001F87D2D92AAA /* SingleObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleObject.swift; path = POPDataSource/Classes/SingleObject.swift; sourceTree = "<group>"; };
-		8788DDF6E983D1CF41559209DA6E6229 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		8AC82264EC0D04B25CCEEF420CB78A42 /* Pods_POPDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_POPDataSource_Example.framework; path = "Pods-POPDataSource_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8788DDF6E983D1CF41559209DA6E6229 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8AC82264EC0D04B25CCEEF420CB78A42 /* Pods_POPDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POPDataSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA3AA7A1F0AE5D2138498C4609CB438 /* POPDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "POPDataSource-prefix.pch"; sourceTree = "<group>"; };
 		907954FA89EFDC730C7AD3482FF4B790 /* Pods-POPDataSource_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-POPDataSource_Example-frameworks.sh"; sourceTree = "<group>"; };
 		94EC2EDC4F7A396ED66A13956E3F080E /* HeaderContainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderContainable.swift; path = POPDataSource/Classes/HeaderContainable.swift; sourceTree = "<group>"; };
-		9946BD4AB9CC9119BBDE0B12EA7757E2 /* POPDataSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = POPDataSource.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9946BD4AB9CC9119BBDE0B12EA7757E2 /* POPDataSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = POPDataSource.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A38B4111C1821FAF582DC38C7DE0FDF3 /* EditableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditableCell.swift; path = POPDataSource/Classes/EditableCell.swift; sourceTree = "<group>"; };
 		A6E23D0D783825DE3C21D7C9852DE4DD /* ComposedDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComposedDataSource.swift; path = POPDataSource/Classes/ComposedDataSource.swift; sourceTree = "<group>"; };
 		A735A51B7A1A86476BBC51AFA43CA946 /* POPDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "POPDataSource-umbrella.h"; sourceTree = "<group>"; };
 		A7D0302EFBA20054375F09A23E7D43DA /* CellConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellConfigurator.swift; path = POPDataSource/Classes/CellConfigurator.swift; sourceTree = "<group>"; };
-		AED2BC809C22F49A70CEB9D3D30BE1FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AED2BC809C22F49A70CEB9D3D30BE1FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B946BCBA8049BEB41B22A2CD0010A0A9 /* Pods-POPDataSource_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-POPDataSource_Example-umbrella.h"; sourceTree = "<group>"; };
 		BB9B4A48AC7F288CA036A3B735196311 /* SectionConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionConfigurator.swift; path = POPDataSource/Classes/SectionConfigurator.swift; sourceTree = "<group>"; };
 		DB9207EE629742D55C40DCBCBB2265D8 /* TableViewShim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewShim.swift; path = POPDataSource/Classes/TableViewShim.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1120;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -373,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 291343A73C0433C1EC6A796F34D16A6E /* POPDataSource.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -407,7 +406,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 291343A73C0433C1EC6A796F34D16A6E /* POPDataSource.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -489,8 +487,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -501,7 +498,6 @@
 			baseConfigurationReference = 623FCB960A2CA452FA3BECB87344359F /* Pods-POPDataSource_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -536,7 +532,6 @@
 			baseConfigurationReference = FB4B86DFD0275B65DEC5BBC6401EBFDE /* Pods-POPDataSource_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

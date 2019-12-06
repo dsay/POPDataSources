@@ -1,40 +1,58 @@
-//
-//  DataFilterable.swift
-//  Pods-POPDataSource_Example
-//
-//  Created by User on 06.12.2019.
-//
+import UIKit
 
-import Foundation
-
-public protocol DataFilterable: class {
-    associatedtype Item: Equatable
-    var filteredData: [Item] { get set }
-    var filterAction: ((Item) -> Item?)? { get }
-    func filter()
+public protocol DataFilterable:
+    class,
+    DataContainable,
+    CellContainable where Item: Hashable
+{
+    var hiddenItems: [Item: IndexPath] { get set }
+    
+    func filtered() -> [Item]
 }
 
-public extension DataFilterable where Self: DataContainable  {
+public extension TableViewDataSource where
+    Self.Item == Self.Configurator.Item,
+    Self: DataFilterable
+{
+    func filtered() -> [Item] {
+        return data.filter { hiddenItems[$0] == nil }
+    }
     
     func numberOfItems() -> Int {
-        return filteredData.count
+        return filtered().count
     }
     
     func item(at index: Int) -> Item {
         guard index >= 0 && index < numberOfItems() else {
             fatalError("Index out of bounds")
         }
-        return filteredData[index]
+        
+        return filtered()[index]
     }
-    
-    func filter() {
-        guard let action = self.filterAction else {
-            filteredData = data
-            return
-        }
-        filteredData = data.compactMap({ item -> Item? in
-            return action(item)
-        })
-    }
-    
 }
+
+//public extension DataFilterable where Self: DataContainable  {
+//
+//    func numberOfItems() -> Int {
+//        let items = data.compactMap { }
+//        return filteredData.count
+//    }
+    
+//    func item(at index: Int) -> Item {
+//        guard index >= 0 && index < numberOfItems() else {
+//            fatalError("Index out of bounds")
+//        }
+//        return filteredData[index]
+//    }
+//
+//    func filter() {
+//        guard let action = self.filterAction else {
+//            filteredData = data
+//            return
+//        }
+//        filteredData = data.compactMap({ item -> Item? in
+//            return action(item)
+//        })
+//    }
+    
+//}
