@@ -87,16 +87,15 @@ extension Album {
     var id: String {
         return "\(name)_\(artistName)"
     }
-    
 }
 
 extension DataFilterable {
     
     func toggleState(for item: Item, at index: IndexPath) {
-        if hiddenItems[item] == nil {
-            hiddenItems[item] = index
+        if let index = hiddenItems.firstIndex(of: item) {
+            hiddenItems.remove(at: index)
         } else {
-            hiddenItems[item] = nil
+            hiddenItems.append(item)
         }
     }
     

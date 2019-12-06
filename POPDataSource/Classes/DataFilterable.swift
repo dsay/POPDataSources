@@ -5,7 +5,7 @@ public protocol DataFilterable:
     DataContainable,
     CellContainable where Item: Hashable
 {
-    var hiddenItems: [Item: IndexPath] { get set }
+    var hiddenItems: [Item] { get set }
     
     func filtered() -> [Item]
 }
@@ -15,7 +15,7 @@ public extension TableViewDataSource where
     Self: DataFilterable
 {
     func filtered() -> [Item] {
-        return data.filter { hiddenItems[$0] == nil }
+        return data.filter { hiddenItems.contains($0) == false }
     }
     
     func numberOfItems() -> Int {
@@ -30,29 +30,3 @@ public extension TableViewDataSource where
         return filtered()[index]
     }
 }
-
-//public extension DataFilterable where Self: DataContainable  {
-//
-//    func numberOfItems() -> Int {
-//        let items = data.compactMap { }
-//        return filteredData.count
-//    }
-    
-//    func item(at index: Int) -> Item {
-//        guard index >= 0 && index < numberOfItems() else {
-//            fatalError("Index out of bounds")
-//        }
-//        return filteredData[index]
-//    }
-//
-//    func filter() {
-//        guard let action = self.filterAction else {
-//            filteredData = data
-//            return
-//        }
-//        filteredData = data.compactMap({ item -> Item? in
-//            return action(item)
-//        })
-//    }
-    
-//}

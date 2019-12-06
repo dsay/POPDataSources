@@ -115,7 +115,7 @@ class AlbumsDataSource:
     /**
      *  Setup Data Filterable protocol
      */
-    var hiddenItems: [Item: IndexPath] = [:]
+    var hiddenItems: [Item] = []
 }
 
 struct AlbumsCellConfigurator: CellConfigurator, CellSelectable {
