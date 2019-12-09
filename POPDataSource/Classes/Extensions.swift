@@ -68,9 +68,9 @@ public extension UITableView {
 
 public extension UITableView {
     
-    func show(_ emptyView: UIView) {
-        if self.backgroundView != emptyView {
-            self.backgroundView = emptyView
+    func show(_ emptyView: UIView?) {
+        if let view = emptyView, self.backgroundView != view {
+            self.backgroundView = view
         }
     }
     
@@ -94,7 +94,6 @@ public extension UITableView {
         if !inserted.isEmpty { insertRows(at: inserted, with: .automatic) }
         endUpdates()
     }
-    
 }
 
 private extension Array where Element: Equatable {

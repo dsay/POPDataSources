@@ -6,6 +6,7 @@ fileprivate enum Section: Int {
 
 open class TableViewDataSourceShim: NSObject {
     
+    public var emptyView: UIView?
     public weak var tableView: UITableView?
 
     public var dataSource: TableViewDataSource {
@@ -28,13 +29,13 @@ open class TableViewDataSourceShim: NSObject {
         self.tableView = tableView
     }
     
-    internal func emptyView(for numberOfSections: Int) {
-        if numberOfSections == 0 {
-            tableView?.show(dataSource.emptyView())
-        } else {
-            tableView?.hideEmptyView()
-        }
-    }
+    private func emptyView(for numberOfRows: Int) {
+         if numberOfRows == 0 {
+             tableView?.show(emptyView)
+         } else {
+             tableView?.hideEmptyView()
+         }
+     }
     
     fileprivate subscript (i: Int, section: Section) -> CGFloat? {
         get {
@@ -59,7 +60,10 @@ extension TableViewDataSourceShim: UITableViewDataSource {
     
     open func numberOfSections(in tableView: UITableView) -> Int {
         let numberOfSections = dataSource.numberOfSections(for: tableView)
-        emptyView(for: numberOfSections)
+        
+        let numberOfRows = (0..<numberOfSections).map { dataSource.numberOfRows(for: tableView, in: $0) }.reduce(0) { $0 + $1 }
+        emptyView(for: numberOfRows)
+        
         return numberOfSections
     }
     

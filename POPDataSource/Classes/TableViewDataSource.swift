@@ -1,8 +1,6 @@
 import UIKit
 
-public protocol TableViewDataSource {
-    func emptyView() -> UIView
-    
+public protocol TableViewDataSource {    
     /**
      *  Base methods
      */
