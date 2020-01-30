@@ -12,6 +12,9 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		CE61E7C323E2F19D00D5AD6C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E7C123E2F19D00D5AD6C /* TableViewCell.swift */; };
+		CE61E7C423E2F19D00D5AD6C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE61E7C223E2F19D00D5AD6C /* TableViewCell.xib */; };
+		CE61E7C623E2F64F00D5AD6C /* CustomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE61E7C523E2F64F00D5AD6C /* CustomeCell.xib */; };
 		CE65E63D2280241400B4955F /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65E62E2280241400B4955F /* DataSources.swift */; };
 		CE65E63F2280241400B4955F /* Albums.json in Resources */ = {isa = PBXBuildFile; fileRef = CE65E62F2280241400B4955F /* Albums.json */; };
 		CE65E6412280241400B4955F /* TextFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65E6302280241400B4955F /* TextFieldDataSource.swift */; };
@@ -44,6 +47,9 @@
 		83CA8AD065F47C9D823B8F70 /* Pods_POPDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POPDataSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8809663C456A168C2AB58DE0 /* Pods-POPDataSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPDataSource_Tests.debug.xcconfig"; path = "Target Support Files/Pods-POPDataSource_Tests/Pods-POPDataSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1A88227A505796D08565AD /* Pods-POPDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPDataSource_Example.release.xcconfig"; path = "Target Support Files/Pods-POPDataSource_Example/Pods-POPDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CE61E7C123E2F19D00D5AD6C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CE61E7C223E2F19D00D5AD6C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CE61E7C523E2F64F00D5AD6C /* CustomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomeCell.xib; sourceTree = "<group>"; };
 		CE65E62E2280241400B4955F /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
 		CE65E62F2280241400B4955F /* Albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albums.json; sourceTree = "<group>"; };
 		CE65E6302280241400B4955F /* TextFieldDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDataSource.swift; sourceTree = "<group>"; };
@@ -199,11 +205,14 @@
 		CE65E6372280241400B4955F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE65E6382280241400B4955F /* CustomeSection.xib */,
+				CE61E7C123E2F19D00D5AD6C /* TableViewCell.swift */,
+				CE61E7C223E2F19D00D5AD6C /* TableViewCell.xib */,
 				CE65E6392280241400B4955F /* CustomeCell.swift */,
+				CE61E7C523E2F64F00D5AD6C /* CustomeCell.xib */,
 				CE65E63A2280241400B4955F /* TextFieldTableViewCell.xib */,
 				CE65E63B2280241400B4955F /* TextFieldTableViewCell.swift */,
 				CE65E63C2280241400B4955F /* CustomeSection.swift */,
+				CE65E6382280241400B4955F /* CustomeSection.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,8 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE61E7C623E2F64F00D5AD6C /* CustomeCell.xib in Resources */,
 				CE65E6512280241400B4955F /* TextFieldTableViewCell.xib in Resources */,
 				CE65E64D2280241400B4955F /* CustomeSection.xib in Resources */,
+				CE61E7C423E2F19D00D5AD6C /* TableViewCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				CE65E6582280242700B4955F /* Main.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -328,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE61E7C323E2F19D00D5AD6C /* TableViewCell.swift in Sources */,
 				CE65E6492280241400B4955F /* TextFieldViewController.swift in Sources */,
 				CE65E6412280241400B4955F /* TextFieldDataSource.swift in Sources */,
 				CE65E6472280241400B4955F /* TableViewController.swift in Sources */,

@@ -25,11 +25,8 @@ class TextFieldDataSource:
     var selectors: [DataSource
         .Action: (TextFieldTableViewCell, IndexPath, String) -> ()] = [:]
     
-    func reuseIdentifier() -> String {
-        return TextFieldTableViewCell.identifier
-    }
-    
-    func configurateCell(_ cell: TextFieldTableViewCell, item: String, at indexPath: IndexPath) {
+    func configurateCell(_ cell: TextFieldTableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: String) {
+        
         cell.textField?.text = item
         cell.textField?.autocorrectionType = .no
         cell.textField?.autocapitalizationType = .words
@@ -65,22 +62,22 @@ class TextFieldDataSource:
 }
 
 class NameDataSource: TextFieldDataSource {
-    override func configurateCell(_ cell: TextFieldTableViewCell, item: String, at indexPath: IndexPath) {
-        super.configurateCell(cell, item: item, at: indexPath)
+    override func configurateCell(_ cell: TextFieldTableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: String) {
+        super.configurateCell(cell, for: tableView, at: indexPath, item: item)
         cell.textField?.placeholder = "Name"
     }
 }
 
 class SurnameDataSource: TextFieldDataSource {
-    override func configurateCell(_ cell: TextFieldTableViewCell, item: String, at indexPath: IndexPath) {
-        super.configurateCell(cell, item: item, at: indexPath)
+    override func configurateCell(_ cell: TextFieldTableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: String) {
+        super.configurateCell(cell, for: tableView, at: indexPath, item: item)
         cell.textField?.placeholder = "Surname"
     }
 }
 
 class EmailDataSource: TextFieldDataSource {
-    override func configurateCell(_ cell: TextFieldTableViewCell, item: String, at indexPath: IndexPath) {
-        super.configurateCell(cell, item: item, at: indexPath)
+    override func configurateCell(_ cell: TextFieldTableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: String) {
+        super.configurateCell(cell, for: tableView, at: indexPath, item: item)
         cell.textField?.placeholder = "Email"
         cell.textField?.keyboardType = .emailAddress
         cell.textField?.autocapitalizationType = .none
@@ -88,8 +85,8 @@ class EmailDataSource: TextFieldDataSource {
 }
 
 class PasswordDataSource: TextFieldDataSource {
-    override func configurateCell(_ cell: TextFieldTableViewCell, item: String, at indexPath: IndexPath) {
-        super.configurateCell(cell, item: item, at: indexPath)
+    override func configurateCell(_ cell: TextFieldTableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: String) {
+        super.configurateCell(cell, for: tableView, at: indexPath, item: item)
         cell.textField?.placeholder = "Password"
         cell.textField?.autocapitalizationType = .none
         cell.textField?.returnKeyType = .done

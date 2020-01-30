@@ -128,6 +128,7 @@ func ==(lhs: Artist, rhs: Artist) -> Bool {
 }
 
 extension Artist: Hashable {
+    
     var hashValue: Int {
         return self.name.hashValue ^ self.id.hashValue ^ self.albums.count.hashValue
     }

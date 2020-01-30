@@ -1,18 +1,24 @@
 import UIKit
 
-public protocol ReuseIdentifier {
-    static var identifier: String { get }
-}
-
-public extension ReuseIdentifier where Self: UIView {
-    
-    static var identifier: String {
-        let type = String(describing: self)
-        return type
-    }
-}
-
 public extension UITableView {
+    
+    func cellView<T: ReuseIdentifier>() -> T? {
+        return dequeueReusableCell(withIdentifier: T.identifier) as? T
+    }
+    
+    func headerFooterView<T: ReuseIdentifier>() -> T? {
+        return dequeueReusableHeaderFooterView(withIdentifier: T.identifier) as? T
+    }
+    
+    func register<T: ReuseIdentifier>(class: T.Type)  {
+        let identifier = T.identifier
+        self.register(T.self, forCellReuseIdentifier: identifier)
+    }
+    
+    func register<T: ReuseIdentifier>(headerFooterViewClass: T.Type)  {
+        let identifier = T.identifier
+        self.register(T.self, forHeaderFooterViewReuseIdentifier: identifier)
+    }
     
     func register<T: ReuseIdentifier>(_ headerFooterView: T.Type)  {
         let identifier = headerFooterView.identifier
@@ -22,24 +28,6 @@ public extension UITableView {
     func register<T: ReuseIdentifier>(cell: T.Type)  {
         let identifier = cell.identifier
         self.register(UINib(nibName: identifier , bundle: nil), forCellReuseIdentifier: identifier)
-    }
-}
-
-public class EmptyView : UIView, ReuseIdentifier {
-    
-}
-
-public class ActionHandleButton : UIButton {
-    
-    private var action: (() -> Void)?
-    
-    @objc internal func triggerActionHandleBlock() {
-        self.action?()
-    }
-    
-    public func actionHandle(_ control :UIControl.Event, ForAction action:@escaping () -> Void) {
-        self.action = action
-        self.addTarget(self, action: #selector(ActionHandleButton.triggerActionHandleBlock), for: control)
     }
 }
 
@@ -93,30 +81,5 @@ public extension UITableView {
         if !deleted.isEmpty { deleteRows(at: deleted, with: .automatic) }
         if !inserted.isEmpty { insertRows(at: inserted, with: .automatic) }
         endUpdates()
-    }
-}
-
-private extension Array where Element: Equatable {
-    
-    func changes(to other: [Element]) ->  (removed: [Int], inserted: [Int])  {
-        let otherEnumerated = other.enumerated()
-        let selfEnumerated = enumerated()
-        let leftCombinations = selfEnumerated.compactMap({ item in
-            return (item, otherEnumerated.first(where: { $0.element == item.element }))
-        })
-        let removedIndexes = leftCombinations.filter { combination -> Bool in
-            combination.1 == nil
-        }.compactMap { combination in
-            combination.0.offset
-        }
-        let rightCombinations = other.enumerated().compactMap({ item in
-            (selfEnumerated.first(where: { $0.element == item.element }), item)
-        })
-        let insertedIndexes = rightCombinations.filter { combination -> Bool in
-            combination.0 == nil
-        }.compactMap { combination in
-            combination.1.offset
-        }
-        return (removedIndexes, insertedIndexes)
     }
 }

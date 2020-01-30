@@ -24,16 +24,12 @@ struct GenresDataSource:
     /**
      *  Setup Cell
      */
-    func reuseIdentifier() -> String {
-        return "genreAlbumCell"
-    }
     
     var selectors: [DataSource
-        .Action: (UITableViewCell, IndexPath, Genre) -> ()] = [:]
+        .Action: (TableViewCell, IndexPath, Genre) -> ()] = [:]
     
     func leadingActions() -> [EditAction] {
         return []
-        
     }
     
     func trailingActions() -> [EditAction] {
@@ -41,13 +37,11 @@ struct GenresDataSource:
                 EditAction(action: .edit, title: "Edit", color: .yellow, image: nil)]
     }
     
-    func configurateCell(_ cell: UITableViewCell, item: Genre, at indexPath: IndexPath) {
+    func configurateCell(_ cell: TableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: Genre) {
         cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = "\(item.albums.count) albums"
     }
 }
-
-
 
 extension Artist:
     TableViewDataSource,
@@ -67,18 +61,15 @@ extension Artist:
     /**
      *  Setup Section
      */
-    func section() -> HeaderFooterView<EmptyView> {
-        return .title(self.name)
-    }
     
+    func configure(_ section: EmptyView, for tableView: UITableView, at index: Int) {
+
+    }
     /**
      *  Setup Cell
      */
-    func reuseIdentifier() -> String {
-        return "genreAlbumCell"
-    }
  
-    func configurateCell(_ cell: UITableViewCell, item: Album, at indexPath: IndexPath) {
+    func configurateCell(_ cell: TableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: Album) {
         cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = "\(item.trackCount) tracks"
     }
@@ -128,11 +119,8 @@ struct AlbumsCellConfigurator: CellConfigurator, CellSelectable {
     /**
      *  Setup Cell
      */
-    func reuseIdentifier() -> String {
-        return "albumCell"
-    }
     
-    func configurateCell(_ cell: CustomeCell, item: Album, at indexPath: IndexPath) {
+    func configurateCell(_ cell: CustomeCell, for tableView: UITableView, at indexPath: IndexPath, item: Album) {
         cell.title?.text = item.name
         cell.button1?.actionHandle(.touchUpInside) { [unowned cell] in
             let selector = self.invoke(.custom(Actions.Album.onButton))
@@ -151,14 +139,12 @@ struct AlbumsSection: SectionConfigurator, SectionSelectable {
     /**
      *  Setup Section
      */
-    func section() -> HeaderFooterView<CustomeSection> {
-        return .view() { footer, index in
-            footer.title!.text = "Section"
-            footer.contentView.backgroundColor = .lightGray
-            footer.button?.actionHandle(.touchUpInside) { [unowned footer] in
-                let selector = self.invoke(.custom(Actions.Album.onSection))
-                selector?(footer, index)
-            }
+    func configure(_ section: CustomeSection, for tableView: UITableView, at index: Int) {
+        section.title!.text = "Section"
+        section.contentView.backgroundColor = .lightGray
+        section.button?.actionHandle(.touchUpInside) { [unowned section] in
+            let selector = self.invoke(.custom(Actions.Album.onSection))
+            selector?(section, index)
         }
     }
 }

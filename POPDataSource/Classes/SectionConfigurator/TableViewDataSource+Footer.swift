@@ -1,5 +1,17 @@
 import UIKit
 
+/**
+* Footer
+*/
+public protocol FooterContainable {
+    associatedtype Footer: SectionConfigurator
+    
+    var footer: Footer? { get }
+}
+
+/**
+* Footer + TableViewDataSource
+*/
 public extension TableViewDataSource where
     Self: FooterContainable,
     Self: SectionConfigurator
@@ -15,16 +27,6 @@ public extension TableViewDataSource where
 {
     typealias FooterView = Self.Footer.SectionView
     
-    func footerTitle(for tableView: UITableView, in section: Int) -> String? {
-        if let sectionValue = self.footer,
-            case .title(let text) = sectionValue.section()
-        {
-            return text
-        }
-        
-        return nil
-    }
-    
     func footerHeight(for tableView: UITableView, in section: Int) -> CGFloat {
         if let view = footerView(for: tableView, in: section) {
             return height(view, in: section)
@@ -34,19 +36,11 @@ public extension TableViewDataSource where
     }
     
     func footerView(for tableView: UITableView, in section: Int) -> UIView? {
-        guard let sectionValue = self.footer,
-            case .view(let configurator) = sectionValue.section(),
-            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: FooterView.identifier) as? FooterView else
-        {
+        guard let configurator = self.footer, let view: FooterView = tableView.headerFooterView() else {
             return nil
         }
         
-        configurator(view, section)
+        configurator.configure(view, for: tableView, at: section)
         return view
-    }
-    
-    private func height(_ view: UIView,in section: Int) -> CGFloat {
-        view.layoutIfNeeded()
-        return view.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
     }
 }

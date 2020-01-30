@@ -46,9 +46,11 @@ class MenuViewController: UITableViewController {
                 destinationController.shim = TableViewDataSourceShim(albums)
                 
             case "showFilterable":
-                let composed = ComposedDataSource([createDataSource(destinationController: destinationController),
-                                                   createDataSource(destinationController: destinationController),
-                                                   createDataSource(destinationController: destinationController)])
+//                let composed = ComposedDataSource([createDataSource(destinationController: destinationController),
+//                                                   createDataSource(destinationController: destinationController),
+//                                                   createDataSource(destinationController: destinationController)])
+                
+                let composed = ComposedDataSource([])
                 destinationController.shim = TableViewDataSourceShim(composed)
             default:
                 fatalError("not implemented")

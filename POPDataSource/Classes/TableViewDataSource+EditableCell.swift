@@ -22,7 +22,8 @@ public protocol EditableCellDataSource {
 public extension TableViewDataSource where
     Self: EditableCellDataSource & DataContainable & CellContainable,
     Self.Configurator: CellSelectable,
-    Self.Configurator.Item == Self.Item
+    Self.Configurator.Item == Self.Item,
+    Self.Configurator.Cell: ReuseIdentifier
 {
     
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {
@@ -48,14 +49,5 @@ public extension TableViewDataSource where
         action.backgroundColor = editAction.color
 
         return action
-    }
-    
-    private func attributes(in tableView: UITableView, at indexPath: IndexPath) -> (cell: Cell, item: Item) {
-        let item = self.item(at: indexPath.row)
-        
-        guard let cell = tableView.cellForRow(at: indexPath) as? Cell else {
-            fatalError("cell no found")
-        }
-        return (cell, item)
     }
 }

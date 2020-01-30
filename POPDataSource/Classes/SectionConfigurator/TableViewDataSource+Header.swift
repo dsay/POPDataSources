@@ -1,5 +1,17 @@
 import UIKit
 
+/**
+* Header
+*/
+public protocol HeaderContainable {
+    associatedtype Header: SectionConfigurator
+    
+    var header: Header? { get }
+}
+
+/**
+* Header + TableViewDataSource
+*/
 public extension TableViewDataSource where
     Self: HeaderContainable,
     Self: SectionConfigurator
@@ -14,17 +26,7 @@ public extension TableViewDataSource where
     Self.Header.SectionView: ReuseIdentifier
 {
     typealias HeaderView = Self.Header.SectionView
-    
-    func headerTitle(for tableView: UITableView, in section: Int) -> String? {
-        if let sectionValue = self.header,
-            case .title(let text) = sectionValue.section()
-        {
-            return text
-        }
-        
-        return nil
-    }
-    
+
     func headerHeight(for tableView: UITableView, in section: Int) -> CGFloat {
         if let view = headerView(for: tableView, in: section) {
             return height(view, in: section)
@@ -34,23 +36,17 @@ public extension TableViewDataSource where
     }
     
     func headerView(for tableView: UITableView, in section: Int) -> UIView? {
-        guard let sectionValue = self.header,
-            case .view(let configurator) = sectionValue.section(),
-            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as? HeaderView else
-        {
+        guard let configurator = self.header, let view: HeaderView = tableView.headerFooterView() else {
             return nil
         }
-        
-        configurator(view, section)
+        configurator.configure(view, for: tableView, at: section)
         return view
-    }
-    
-    private func height(_ view: UIView,in section: Int) -> CGFloat {
-        view.layoutIfNeeded()
-        return view.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
     }
 }
 
+/**
+* Header + SectionSelectable
+*/
 public extension TableViewDataSource where
     Self: HeaderContainable,
     Self.Header: SectionSelectable,
