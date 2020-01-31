@@ -4,8 +4,7 @@ public extension TableViewDataSource where
     Self: CellContainable,
     Self: DataContainable,
     Self.Item == Self.Configurator.Item,
-    Self.Configurator: CellSelectable,
-    Self.Configurator.Cell: ReuseIdentifier
+    Self.Configurator: CellSelectable
 {
     func didSelectRow(in tableView: UITableView, at indexPath: IndexPath) {
         let attributes = self.attributes(in: tableView, at: indexPath)

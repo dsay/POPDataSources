@@ -43,9 +43,7 @@ public extension TableViewDataSource where
 public extension TableViewDataSource where
     Self: DataContainable,
     Self: CellContainable,
-    Self.Item == Self.Configurator.Item,
-    Self.Configurator.Cell: ReuseIdentifier
-
+    Self.Item == Self.Configurator.Item
 {
     typealias Cell = Self.Configurator.Cell
     
