@@ -37,11 +37,11 @@ public extension TableViewDataSource where
     }
     
     func didDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath) {
-         let item = self.item(at: indexPath.row)
-         if let cell = row as? Cell,
-             let selector = self.cellConfigurator?.selectors[.didDisplay]
-         {
-             selector(cell, indexPath, item)
-         }
-     }
+        let item = self.data[indexPath.row]
+        if let cell = row as? Cell,
+            let selector = self.cellConfigurator?.selectors[.didDisplay]
+        {
+            selector(cell, indexPath, item)
+        }
+    }
 }
