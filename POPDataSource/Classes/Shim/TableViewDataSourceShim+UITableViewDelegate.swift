@@ -43,16 +43,19 @@ extension TableViewDataSourceShim: UITableViewDelegate {
     }
     
     open func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        dataSource.didDisplay(row: cell, in: tableView, at: indexPath)
         self[indexPath] = cell.bounds.height
     }
     
     open func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
+        dataSource.didDisplay(header: view, for: tableView, in: section)
         if view.bounds.height >= 1 {
              self[section, .header] = view.bounds.height
         }
     }
     
     open func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
+        dataSource.didDisplay(footer: view, for: tableView, in: section)
         if view.bounds.height >= 1 {
             self[section, .footer] = view.bounds.height
         }
