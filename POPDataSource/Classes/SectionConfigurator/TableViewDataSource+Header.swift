@@ -58,4 +58,11 @@ public extension TableViewDataSource where
             selector(headerView, section)
         }
     }
+    
+    func didDisplay(header: UIView, for tableView: UITableView, in section: Int) {
+        if let headerView = header as? HeaderView,
+            let selector = self.header?.selectors[.didDisplayHeader] {
+            selector(headerView, section)
+        }
+    }
 }

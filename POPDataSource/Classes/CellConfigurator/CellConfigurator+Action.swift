@@ -11,6 +11,9 @@ public struct DataSource {
         case willDisplay
         case willDisplayHeader
         case willDisplayFooter
+        case didDisplay
+        case didDisplayHeader
+        case didDisplayFooter
         case custom(String)
     }
 }

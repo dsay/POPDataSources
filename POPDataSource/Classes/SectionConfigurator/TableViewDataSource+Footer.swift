@@ -44,3 +44,26 @@ public extension TableViewDataSource where
         return view
     }
 }
+
+/**
+* Footer + SectionSelectable
+*/
+public extension TableViewDataSource where
+    Self: FooterContainable,
+    Self.Footer: SectionSelectable,
+    Self.Footer.SectionView: ReuseIdentifier
+{
+    func willDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
+        if let footerView = footer as? FooterView,
+            let selector = self.footer?.selectors[.willDisplayFooter] {
+            selector(footerView, section)
+        }
+    }
+    
+    func didDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
+        if let footerView = footer as? FooterView,
+            let selector = self.footer?.selectors[.didDisplayFooter] {
+            selector(footerView, section)
+        }
+    }
+}
