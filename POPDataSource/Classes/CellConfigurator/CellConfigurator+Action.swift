@@ -28,9 +28,6 @@ extension DataSource.Action: Hashable, Equatable {
             case .willDisplay: return 6
             case .willDisplayHeader: return 7
             case .willDisplayFooter: return 8
-            case .didDisplay: return 10
-            case .didDisplayHeader: return 11
-            case .didDisplayFooter: return 12
             case .custom(let x): return 9 + x.hashValue
             }
         }
