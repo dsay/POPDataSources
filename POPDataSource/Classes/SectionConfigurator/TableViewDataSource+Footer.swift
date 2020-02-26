@@ -59,11 +59,4 @@ public extension TableViewDataSource where
             selector(footerView, section)
         }
     }
-    
-    func didDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
-        if let footerView = footer as? FooterView,
-            let selector = self.footer?.selectors[.didDisplayFooter] {
-            selector(footerView, section)
-        }
-    }
 }

@@ -41,13 +41,7 @@ public protocol TableViewDataSource {
     func willDisplay(header: UIView, for tableView: UITableView, in section: Int)
     
     func willDisplay(footer: UIView, for tableView: UITableView, in section: Int)
-
-    func didDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath)
     
-    func didDisplay(header: UIView, for tableView: UITableView, in section: Int)
-    
-    func didDisplay(footer: UIView, for tableView: UITableView, in section: Int)
-
     /**
      *  Edit
      */
@@ -117,15 +111,6 @@ public extension TableViewDataSource {
     }
     
     func willDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
-    }
-    
-    func didDisplay(row: UITableViewCell, in tableView: UITableView, at indexPath: IndexPath) {
-    }
-    
-    func didDisplay(header: UIView, for tableView: UITableView, in section: Int) {
-    }
-    
-    func didDisplay(footer: UIView, for tableView: UITableView, in section: Int) {
     }
     
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {
