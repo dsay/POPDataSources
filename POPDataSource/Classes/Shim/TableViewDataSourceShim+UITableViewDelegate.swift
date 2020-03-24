@@ -57,4 +57,22 @@ extension TableViewDataSourceShim: UITableViewDelegate {
             self[section, .footer] = view.bounds.height
         }
     }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let tableView = scrollView as? UITableView, scrollView.isDecelerating {
+            dataSource.didStartScrolling(for: tableView)
+        }
+    }
+    
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if let tableView = scrollView as? UITableView, !decelerate {
+            dataSource.didEndScrolling(for: tableView)
+        }
+    }
+    
+    open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if let tableView = scrollView as? UITableView {
+            dataSource.didEndScrolling(for: tableView)
+        }
+    }
 }

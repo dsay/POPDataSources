@@ -155,4 +155,16 @@ public extension TableViewDataSource where Self: DataSourcesContainable {
         let dataSource = self.dataSource(at: indexPath.section)
         return dataSource.leadingSwipeActions(for: tableView, at: indexPath)
     }
+    
+    func didStartScrolling(for tableView: UITableView) {
+        dataSources.forEach {
+            $0.didStartScrolling(for: tableView)
+        }
+    }
+     
+    func didEndScrolling(for tableView: UITableView) {
+        dataSources.forEach {
+            $0.didEndScrolling(for: tableView)
+        }
+    }
 }

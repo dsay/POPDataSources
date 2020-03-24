@@ -53,6 +53,14 @@ public protocol TableViewDataSource {
     func trailingSwipeActions(for tableView: UITableView, at indexPath: IndexPath) -> UISwipeActionsConfiguration?
     
     func leadingSwipeActions(for tableView: UITableView, at indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    
+    /**
+     *  Scroll
+     */
+    
+    func didStartScrolling(for tableView: UITableView)
+    
+    func didEndScrolling(for tableView: UITableView)
 }
 
 /**
@@ -129,4 +137,11 @@ public extension TableViewDataSource {
         return nil
     }
 
+    func didStartScrolling(for tableView: UITableView) {
+        
+    }
+    
+    func didEndScrolling(for tableView: UITableView) {
+        
+    }
 }
