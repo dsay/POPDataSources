@@ -15,7 +15,7 @@ struct GenresDataSource:
     CellConfigurator,
     EditableCellDataSource,
     CellSelectable
-{
+{    
     /**
      *  Data Containable protocol
      */
