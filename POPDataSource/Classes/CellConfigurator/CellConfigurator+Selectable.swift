@@ -5,7 +5,7 @@ import UIKit
  */
 public protocol CellSelectable: CellConfigurator {
     
-    typealias Handler = (Cell, IndexPath, Item) -> ()
+    typealias Handler = (CellView, IndexPath, Item) -> ()
     
     var selectors: [DataSource.Action: Handler] { get set }
 }

@@ -14,16 +14,17 @@ public protocol CellContainable {
  */
 public protocol CellConfigurator {
     associatedtype Item
-    associatedtype Cell: (UITableViewCell & ReuseIdentifier)
+    associatedtype CellView: (UITableViewCell & ReuseIdentifier)
 
     func reuseIdentifier() -> String
     
-    func configurateCell(_ cell: Cell, for tableView: UITableView, at indexPath: IndexPath, item: Item)
+    func configurateCell(_ cell: CellView, for tableView: UITableView, at indexPath: IndexPath, item: Item)
 }
 
 public extension CellConfigurator {
     
     func reuseIdentifier() -> String {
-        return Cell.identifier
+        return CellView.identifier
     }
 }
+
