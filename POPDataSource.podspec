@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
   
   s.homepage = 'https://github.com/dsay/POPDataSource'
 
-  s.source = { :git => 'https://github.com/dsay/POPDataSource.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/dsay/POPDataSources.git', :branch => s.version.to_s, :tag => s.version.to_s }
   s.framework = "UIKit"
   
-  #s.swift_version = "5.0"
+  s.swift_version = "5.0"
   
   s.source_files = "POPDataSource/Classes/**/*.{swift}"
   
