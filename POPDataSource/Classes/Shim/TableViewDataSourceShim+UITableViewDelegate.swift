@@ -58,13 +58,13 @@ extension TableViewDataSourceShim: UITableViewDelegate {
         }
     }
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let tableView = scrollView as? UITableView, scrollView.isDecelerating {
             dataSource.didStartScrolling(for: tableView)
         }
     }
     
-    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if let tableView = scrollView as? UITableView, !decelerate {
             dataSource.didEndScrolling(for: tableView)
         }
