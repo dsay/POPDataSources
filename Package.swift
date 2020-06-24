@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "POPDataSources",
-            dependencies: []),
+            path: "Sources"),
         .testTarget(
             name: "POPDataSourcesTests",
             dependencies: ["POPDataSources"]),
