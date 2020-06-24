@@ -1,20 +1,21 @@
+// swift-tools-version:5.2
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
 
 let package = Package(
-    name: "POPDataSource",
-    products: [
-        .library(
-            name: "POPDataSource",
-            targets: ["POPDataSource"]),
-    ],
+    name: "POPDataSources",
+    platforms: [.iOS(.v11)],
     dependencies: [
+
     ],
     targets: [
         .target(
-            name: "POPDataSource",
+            name: "POPDataSources",
             dependencies: []),
         .testTarget(
-            name: "POPDataSourceTests",
-            dependencies: ["POPDataSource"]),
-    ]
+            name: "POPDataSourcesTests",
+            dependencies: ["POPDataSources"]),
+    ],
+    swiftLanguageVersions: [.v5]
 )

@@ -1,7 +1,7 @@
 import XCTest
 
-import POPDataSourceTests
+import POPDataSourcesTests
 
 var tests = [XCTestCaseEntry]()
-tests += POPDataSourceTests.allTests()
+tests += POPDataSourcesTests.allTests()
 XCTMain(tests)
