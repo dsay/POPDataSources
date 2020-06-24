@@ -6,6 +6,11 @@ import PackageDescription
 let package = Package(
     name: "POPDataSources",
     platforms: [.iOS(.v11)],
+    products: [
+           .library(
+               name: "POPDataSources",
+               targets: ["POPDataSources"])
+       ],
     dependencies: [
 
     ],
