@@ -22,7 +22,7 @@ pod 'POPDataSource'
 
 ## Author
 
-dsay, dsay@ciklum.com
+dsay, dmitriiy.sai2013@gmail.com
 
 ## License
 
