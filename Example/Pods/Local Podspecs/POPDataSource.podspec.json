@@ -5,7 +5,7 @@
   },
   "summary": "Protocol oriented programming. Data source for uitableview.",
   "requires_arc": true,
-  "version": "0.2.2",
+  "version": "0.3.10",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -15,9 +15,14 @@
   },
   "homepage": "https://github.com/dsay/POPDataSource",
   "source": {
-    "git": "https://github.com/dsay/POPDataSource.git",
-    "tag": "0.2.2"
+    "git": "https://github.com/dsay/POPDataSources.git",
+    "tag": "0.3.10"
   },
   "frameworks": "UIKit",
-  "source_files": "POPDataSource/Classes/**/*.{swift}"
+  "swift_versions": [
+    "5.1",
+    "5.2"
+  ],
+  "source_files": "Source/**/*.{swift}",
+  "swift_version": "5.2"
 }

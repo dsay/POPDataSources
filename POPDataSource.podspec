@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-  s.version = "0.3.10"
+  s.version = "0.3.11"
   
   s.license = { :type => 'MIT', :file => 'LICENSE' }
 
@@ -27,13 +27,11 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/dsay/POPDataSource'
 
   s.source = { :git => 'https://github.com/dsay/POPDataSources.git', :tag => s.version.to_s }
+  
   s.framework = "UIKit"
   
-  s.swift_version = "5.0"
+  s.swift_version = ['5.1', '5.2']
   
-  s.source_files = "POPDataSource/Classes/**/*.{swift}"
-  
-  #s.resources = "POPDataSource/**/*.{png,jpeg,jpg,storyboard,xib}"
+  s.source_files = "Source/**/*.{swift}"
   
 end
-#pod trunk push /Users/user/Desktop/prog/POPDataSource/vendor/POPDataSources/POPDataSource.podspec --swift-version=4.2
