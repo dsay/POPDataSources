@@ -1,5 +1,5 @@
 PODS:
-  - POPDataSource (0.3.11)
+  - POPDataSource (0.3.14)
 
 DEPENDENCIES:
   - POPDataSource (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  POPDataSource: 09201923a0f49d158283b5becd33ca8464c795e5
+  POPDataSource: 989099e0a5655ddda8f0b315134944c9086c84b1
 
 PODFILE CHECKSUM: c8b61faf6d2c62fc204e703efed2f85816e00e5d
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

@@ -15,8 +15,21 @@ public struct EditAction {
 }
 
 public protocol EditableCellDataSource {
-    func trailingActions() -> [EditAction]
-    func leadingActions() -> [EditAction]
+
+    var trailingActionFullSwipe: Bool { get }
+    var trailingActions: [EditAction] { get }
+    
+    var leadingActionFullSwipe: Bool { get }
+    var leadingActions: [EditAction] { get }
+}
+
+public extension EditableCellDataSource {
+    
+    var trailingActionFullSwipe: Bool { true }
+    var trailingActions: [EditAction] { [] }
+
+    var leadingActionFullSwipe: Bool { true }
+    var leadingActions: [EditAction] { [] }
 }
 
 public extension TableViewDataSource where
@@ -24,17 +37,21 @@ public extension TableViewDataSource where
     Self.Configurator: CellSelectable,
     Self.Configurator.Item == Self.Item
 {
-    
     func canEditRow(for tableView: UITableView, at  indexPath: IndexPath) -> Bool {
         return true
     }
 
     func trailingSwipeActions(for tableView: UITableView, at indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        return UISwipeActionsConfiguration(actions: trailingActions().map { retrive($0, tableView, indexPath) })
+        let configuration = UISwipeActionsConfiguration(actions: trailingActions.map { retrive($0, tableView, indexPath) }
+        )
+        configuration.performsFirstActionWithFullSwipe = trailingActionFullSwipe
+        return configuration
     }
 
     func leadingSwipeActions(for tableView: UITableView, at indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        return UISwipeActionsConfiguration(actions: leadingActions().map { retrive($0, tableView, indexPath) })
+        let configuration =  UISwipeActionsConfiguration(actions: leadingActions.map { retrive($0, tableView, indexPath) })
+        configuration.performsFirstActionWithFullSwipe = leadingActionFullSwipe
+        return configuration
     }
 
     private func retrive(_ editAction: EditAction, _ tableView: UITableView, _ indexPath: IndexPath) -> UIContextualAction {
