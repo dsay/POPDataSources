@@ -14,7 +14,6 @@ class SegmentTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.register(CustomeSection.self)
         tableView.register(cell: TableViewCell.self)
 

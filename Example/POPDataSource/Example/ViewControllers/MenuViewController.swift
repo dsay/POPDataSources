@@ -9,8 +9,16 @@ class MenuViewController: UITableViewController {
         if let destinationController = segue.destination as? TableViewController {
             switch segue.identifier! {
             case "showGenres":
-                destinationController.shim = TableViewDataSourceShim(GenresDataSource())
-                
+                let dataSourceLoader: PagingDataSource.Loader = { result in
+                    let deadlineTime = DispatchTime.now() + .seconds(3)
+                    DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+                        result(false, [AlbumsDataSource()])
+                    }
+                }
+                let albums = AlbumsDataSource()
+                let dataSource = PagingDataSource([albums], dataSourceLoader)
+                destinationController.shim = TableViewDataSourceShim(dataSource)
+
             case "showArtists":
                 let dataSource = ComposedDataSource(LedZeppelin.artists)
                 destinationController.shim = TableViewDataSourceShim(dataSource)
