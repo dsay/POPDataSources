@@ -1,0 +1,174 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataFilterable"
+provides-nominal:
+- "14POPDataSources14DataFilterableP"
+provides-member:
+- ["14POPDataSources14DataFilterableP", ""]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "filtered"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfItems"]
+- ["14POPDataSources19TableViewDataSourceP", "item"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- !private "<"
+- !private "=="
+- !private ">="
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "CellContainable"
+- "DataContainable"
+- "DataFilterable"
+- !private "FloatLiteralType"
+- "Hashable"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
+- "TableViewDataSource"
+- !private "fatalError"
+depends-member:
+- !private ["Sa", "contains"]
+- !private ["Sa", "count"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "contains"]
+- !private ["SK", "count"]
+- !private ["SK", "filter"]
+- !private ["SK", "subscript"]
+- ["14POPDataSources15CellContainableP", "DataFilterable"]
+- ["14POPDataSources15CellContainableP", "Hashable"]
+- ["14POPDataSources15CellContainableP", "Int"]
+- ["14POPDataSources15CellContainableP", "Item"]
+- ["14POPDataSources15CellContainableP", ""]
+- !private ["14POPDataSources15CellContainableP", "data"]
+- !private ["14POPDataSources15CellContainableP", "fatalError"]
+- ["14POPDataSources15CellContainableP", "filtered"]
+- ["14POPDataSources15CellContainableP", "hiddenItems"]
+- !private ["14POPDataSources15CellContainableP", "numberOfItems"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "count"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["14POPDataSources15DataContainableP", "DataFilterable"]
+- ["14POPDataSources15DataContainableP", "Hashable"]
+- ["14POPDataSources15DataContainableP", "Int"]
+- ["14POPDataSources15DataContainableP", "Item"]
+- ["14POPDataSources15DataContainableP", ""]
+- !private ["14POPDataSources15DataContainableP", "data"]
+- !private ["14POPDataSources15DataContainableP", "fatalError"]
+- ["14POPDataSources15DataContainableP", "filtered"]
+- ["14POPDataSources15DataContainableP", "hiddenItems"]
+- !private ["14POPDataSources15DataContainableP", "numberOfItems"]
+- ["14POPDataSources14DataFilterableP", "DataFilterable"]
+- ["14POPDataSources14DataFilterableP", "Hashable"]
+- ["14POPDataSources14DataFilterableP", "Int"]
+- ["14POPDataSources14DataFilterableP", "Item"]
+- !private ["14POPDataSources14DataFilterableP", "data"]
+- !private ["14POPDataSources14DataFilterableP", "fatalError"]
+- ["14POPDataSources14DataFilterableP", "filtered"]
+- ["14POPDataSources14DataFilterableP", "hiddenItems"]
+- !private ["14POPDataSources14DataFilterableP", "numberOfItems"]
+- !private ["Se", "contains"]
+- !private ["Se", "count"]
+- !private ["Se", "filter"]
+- !private ["Se", "subscript"]
+- !private ["SE", "contains"]
+- !private ["SE", "count"]
+- !private ["SE", "filter"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "count"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "contains"]
+- !private ["SH", "count"]
+- !private ["SH", "filter"]
+- !private ["SH", "subscript"]
+- !private ["SM", "contains"]
+- !private ["SM", "count"]
+- !private ["SM", "filter"]
+- !private ["SM", "subscript"]
+- !private ["Sk", "contains"]
+- !private ["Sk", "count"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "count"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "contains"]
+- !private ["ST", "count"]
+- !private ["ST", "filter"]
+- !private ["ST", "subscript"]
+- ["14POPDataSources19TableViewDataSourceP", "DataFilterable"]
+- ["14POPDataSources19TableViewDataSourceP", "Int"]
+- ["14POPDataSources19TableViewDataSourceP", "Item"]
+- !private ["14POPDataSources19TableViewDataSourceP", "data"]
+- !private ["14POPDataSources19TableViewDataSourceP", "fatalError"]
+- ["14POPDataSources19TableViewDataSourceP", "filtered"]
+- !private ["14POPDataSources19TableViewDataSourceP", "hiddenItems"]
+- ["14POPDataSources19TableViewDataSourceP", "item"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfItems"]
+- !private ["s14_ArrayProtocolP", "contains"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "contains"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- "14POPDataSources15CellContainableP"
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "14POPDataSources15DataContainableP"
+- "14POPDataSources14DataFilterableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- "14POPDataSources19TableViewDataSourceP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "9884d236773aa8d99f6a622e4fc11e08"

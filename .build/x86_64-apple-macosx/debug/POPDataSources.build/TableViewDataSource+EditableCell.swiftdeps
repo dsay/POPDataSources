@@ -1,0 +1,97 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EditAction"
+- "EditableCellDataSource"
+provides-nominal:
+- "14POPDataSources10EditActionV"
+- "14POPDataSources22EditableCellDataSourceP"
+provides-member:
+- ["14POPDataSources10EditActionV", ""]
+- ["14POPDataSources22EditableCellDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "canEditRow"]
+- ["14POPDataSources19TableViewDataSourceP", "trailingSwipeActions"]
+- ["14POPDataSources19TableViewDataSourceP", "leadingSwipeActions"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CellContainable"
+- "CellSelectable"
+- "DataContainable"
+- "DataSource"
+- "EditAction"
+- "EditableCellDataSource"
+- "IndexPath"
+- "String"
+- "TableViewDataSource"
+- "UIColor"
+- "UIContextualAction"
+- "UIImage"
+- "UISwipeActionsConfiguration"
+- "UITableView"
+depends-member:
+- ["14POPDataSources15CellContainableP", "Bool"]
+- ["14POPDataSources15CellContainableP", "CellContainable"]
+- ["14POPDataSources15CellContainableP", "CellSelectable"]
+- ["14POPDataSources15CellContainableP", "DataContainable"]
+- ["14POPDataSources15CellContainableP", "EditAction"]
+- ["14POPDataSources15CellContainableP", "EditableCellDataSource"]
+- ["14POPDataSources15CellContainableP", "IndexPath"]
+- ["14POPDataSources15CellContainableP", "UIContextualAction"]
+- ["14POPDataSources15CellContainableP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources15CellContainableP", "UITableView"]
+- ["14POPDataSources15DataContainableP", "Bool"]
+- ["14POPDataSources15DataContainableP", "CellContainable"]
+- ["14POPDataSources15DataContainableP", "CellSelectable"]
+- ["14POPDataSources15DataContainableP", "DataContainable"]
+- ["14POPDataSources15DataContainableP", "EditAction"]
+- ["14POPDataSources15DataContainableP", "EditableCellDataSource"]
+- ["14POPDataSources15DataContainableP", "IndexPath"]
+- ["14POPDataSources15DataContainableP", "UIContextualAction"]
+- ["14POPDataSources15DataContainableP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources15DataContainableP", "UITableView"]
+- ["14POPDataSources10DataSourceV", "Action"]
+- ["14POPDataSources10EditActionV", "DataSource"]
+- ["14POPDataSources10EditActionV", "String"]
+- ["14POPDataSources10EditActionV", "UIColor"]
+- ["14POPDataSources10EditActionV", "UIImage"]
+- ["14POPDataSources10EditActionV", "action"]
+- !private ["14POPDataSources10EditActionV", "color"]
+- !private ["14POPDataSources10EditActionV", "image"]
+- ["14POPDataSources10EditActionV", "title"]
+- ["14POPDataSources22EditableCellDataSourceP", "Bool"]
+- ["14POPDataSources22EditableCellDataSourceP", "CellContainable"]
+- ["14POPDataSources22EditableCellDataSourceP", "CellSelectable"]
+- ["14POPDataSources22EditableCellDataSourceP", "DataContainable"]
+- ["14POPDataSources22EditableCellDataSourceP", "EditAction"]
+- ["14POPDataSources22EditableCellDataSourceP", "EditableCellDataSource"]
+- ["14POPDataSources22EditableCellDataSourceP", "IndexPath"]
+- ["14POPDataSources22EditableCellDataSourceP", "UIContextualAction"]
+- ["14POPDataSources22EditableCellDataSourceP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources22EditableCellDataSourceP", "UITableView"]
+- ["14POPDataSources22EditableCellDataSourceP", "leadingActions"]
+- ["14POPDataSources22EditableCellDataSourceP", "trailingActions"]
+- ["14POPDataSources19TableViewDataSourceP", "Bool"]
+- ["14POPDataSources19TableViewDataSourceP", "CellContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "CellSelectable"]
+- ["14POPDataSources19TableViewDataSourceP", "DataContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "EditAction"]
+- ["14POPDataSources19TableViewDataSourceP", "EditableCellDataSource"]
+- ["14POPDataSources19TableViewDataSourceP", "IndexPath"]
+- ["14POPDataSources19TableViewDataSourceP", "UIContextualAction"]
+- ["14POPDataSources19TableViewDataSourceP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableView"]
+depends-nominal:
+- "14POPDataSources15CellContainableP"
+- "14POPDataSources15DataContainableP"
+- "14POPDataSources10DataSourceV"
+- "14POPDataSources10EditActionV"
+- "14POPDataSources22EditableCellDataSourceP"
+- "14POPDataSources19TableViewDataSourceP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "9366d8d2d562d5d3aa09703528056792"

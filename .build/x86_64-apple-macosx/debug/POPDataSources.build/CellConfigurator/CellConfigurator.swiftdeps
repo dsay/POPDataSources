@@ -1,0 +1,38 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CellContainable"
+- "CellConfigurator"
+provides-nominal:
+- "14POPDataSources15CellContainableP"
+- "14POPDataSources16CellConfiguratorP"
+provides-member:
+- ["14POPDataSources15CellContainableP", ""]
+- ["14POPDataSources16CellConfiguratorP", ""]
+- ["14POPDataSources16CellConfiguratorP", "reuseIdentifier"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CellConfigurator"
+- "CellContainable"
+- "IndexPath"
+- "String"
+- "UITableView"
+- "UITableViewCell"
+depends-member:
+- ["14POPDataSources16CellConfiguratorP", "CellView"]
+- ["14POPDataSources16CellConfiguratorP", "IndexPath"]
+- ["14POPDataSources16CellConfiguratorP", "Item"]
+- ["14POPDataSources16CellConfiguratorP", "String"]
+- ["14POPDataSources16CellConfiguratorP", "UITableView"]
+- ["14POPDataSources16CellConfiguratorP", "UITableViewCell"]
+- ["14POPDataSources16CellConfiguratorP", "reuseIdentifier"]
+- ["14POPDataSources15CellContainableP", "CellConfigurator"]
+- ["14POPDataSources15CellContainableP", "Configurator"]
+- ["14POPDataSources15CellContainableP", "cellConfigurator"]
+depends-nominal:
+- "14POPDataSources16CellConfiguratorP"
+- "14POPDataSources15CellContainableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "b422b014b8e71444380870ffb57c258d"

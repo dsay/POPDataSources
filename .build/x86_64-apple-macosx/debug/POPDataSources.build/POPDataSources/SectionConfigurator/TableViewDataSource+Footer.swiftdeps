@@ -1,0 +1,98 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FooterContainable"
+provides-nominal:
+- "14POPDataSources17FooterContainableP"
+provides-member:
+- ["14POPDataSources17FooterContainableP", ""]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "footer"]
+- ["14POPDataSources19TableViewDataSourceP", "FooterView"]
+- ["14POPDataSources19TableViewDataSourceP", "footerHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "footerView"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CGFloat"
+- "CastingPrecedence"
+- "FooterContainable"
+- "Int"
+- "ReuseIdentifier"
+- "SectionConfigurator"
+- "SectionSelectable"
+- "TableViewDataSource"
+- "UITableView"
+- "UIView"
+depends-member:
+- !private ["14POPDataSources10DataSourceV6ActionO", "deinit"]
+- !private ["14POPDataSources10DataSourceV6ActionO", "willDisplayFooter"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "willDisplayFooter"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "willDisplayFooter"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["14POPDataSources17FooterContainableP", "CGFloat"]
+- ["14POPDataSources17FooterContainableP", "Footer"]
+- ["14POPDataSources17FooterContainableP", "FooterContainable"]
+- !private ["14POPDataSources17FooterContainableP", "FooterView"]
+- ["14POPDataSources17FooterContainableP", "Int"]
+- ["14POPDataSources17FooterContainableP", "ReuseIdentifier"]
+- ["14POPDataSources17FooterContainableP", "SectionConfigurator"]
+- ["14POPDataSources17FooterContainableP", "SectionSelectable"]
+- ["14POPDataSources17FooterContainableP", "UITableView"]
+- ["14POPDataSources17FooterContainableP", "UIView"]
+- ["14POPDataSources17FooterContainableP", "footer"]
+- !private ["14POPDataSources17FooterContainableP", "footerView"]
+- !private ["SH", "subscript"]
+- !private ["SH", "willDisplayFooter"]
+- !private ["SD5IndexV", "willDisplayFooter"]
+- ["14POPDataSources19SectionConfiguratorP", "FooterContainable"]
+- ["14POPDataSources19SectionConfiguratorP", "SectionConfigurator"]
+- !private ["14POPDataSources19SectionConfiguratorP", "configure"]
+- !private ["14POPDataSources19SectionConfiguratorP", "selectors"]
+- !private ["14POPDataSources17SectionSelectableP", "selectors"]
+- !private ["ST", "subscript"]
+- ["14POPDataSources19TableViewDataSourceP", "CGFloat"]
+- ["14POPDataSources19TableViewDataSourceP", "FooterContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "FooterView"]
+- ["14POPDataSources19TableViewDataSourceP", "Int"]
+- ["14POPDataSources19TableViewDataSourceP", "ReuseIdentifier"]
+- ["14POPDataSources19TableViewDataSourceP", "SectionConfigurator"]
+- ["14POPDataSources19TableViewDataSourceP", "SectionSelectable"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableView"]
+- ["14POPDataSources19TableViewDataSourceP", "UIView"]
+- ["14POPDataSources19TableViewDataSourceP", "footer"]
+- !private ["14POPDataSources19TableViewDataSourceP", "footerView"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+depends-nominal:
+- !private "14POPDataSources10DataSourceV6ActionO"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "14POPDataSources17FooterContainableP"
+- !private "SH"
+- !private "SD5IndexV"
+- "14POPDataSources19SectionConfiguratorP"
+- !private "14POPDataSources17SectionSelectableP"
+- !private "ST"
+- "14POPDataSources19TableViewDataSourceP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "b4ca3b749785becc9b690170650d8180"

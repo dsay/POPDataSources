@@ -1,0 +1,26 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EmptyView"
+provides-nominal:
+- "14POPDataSources9EmptyViewC"
+provides-member:
+- ["14POPDataSources9EmptyViewC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "EmptyView"
+- "ReuseIdentifier"
+- "UIView"
+depends-member:
+- ["14POPDataSources9EmptyViewC", "deinit"]
+- ["14POPDataSources9EmptyViewC", "identifier"]
+- ["14POPDataSources9EmptyViewC", "init"]
+- ["14POPDataSources15ReuseIdentifierP", ""]
+- ["14POPDataSources15ReuseIdentifierP", "identifier"]
+depends-nominal:
+- "14POPDataSources9EmptyViewC"
+- "14POPDataSources15ReuseIdentifierP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "45ec5a33498244b66a35a74c4832490c"

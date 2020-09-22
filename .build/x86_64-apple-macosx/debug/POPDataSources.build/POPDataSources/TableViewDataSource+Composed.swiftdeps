@@ -1,0 +1,192 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ComposedDataSource"
+- "DataSourcesContainable"
+provides-nominal:
+- "14POPDataSources18ComposedDataSourceC"
+- "14POPDataSources04DataB11ContainableP"
+provides-member:
+- ["14POPDataSources18ComposedDataSourceC", ""]
+- ["14POPDataSources04DataB11ContainableP", ""]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources04DataB11ContainableP", "numberOfSections"]
+- ["14POPDataSources04DataB11ContainableP", "dataSource"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfSections"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfRows"]
+- ["14POPDataSources19TableViewDataSourceP", "cellHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "cell"]
+- ["14POPDataSources19TableViewDataSourceP", "headerTitle"]
+- ["14POPDataSources19TableViewDataSourceP", "footerTitle"]
+- ["14POPDataSources19TableViewDataSourceP", "headerHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "footerHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "headerView"]
+- ["14POPDataSources19TableViewDataSourceP", "footerView"]
+- ["14POPDataSources19TableViewDataSourceP", "didSelectRow"]
+- ["14POPDataSources19TableViewDataSourceP", "didHighlightRow"]
+- ["14POPDataSources19TableViewDataSourceP", "didUnhighlightRow"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources19TableViewDataSourceP", "canEditRow"]
+- ["14POPDataSources19TableViewDataSourceP", "editActions"]
+- ["14POPDataSources19TableViewDataSourceP", "trailingSwipeActions"]
+- ["14POPDataSources19TableViewDataSourceP", "leadingSwipeActions"]
+- ["14POPDataSources19TableViewDataSourceP", "didStartScrolling"]
+- ["14POPDataSources19TableViewDataSourceP", "didEndScrolling"]
+provides-dynamic-lookup:
+- "dataSources"
+- "subscript"
+depends-top-level:
+- !private "&&"
+- !private "<"
+- !private ">="
+- "AssignmentPrecedence"
+- "Bool"
+- "CGFloat"
+- "ComposedDataSource"
+- "DataSourcesContainable"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- "String"
+- !private "StringLiteralType"
+- "TableViewDataSource"
+- "UISwipeActionsConfiguration"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewRowAction"
+- "UIView"
+- !private "fatalError"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "forEach"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "forEach"]
+- !private ["SK", "subscript"]
+- !private ["Sl", "count"]
+- !private ["Sl", "forEach"]
+- !private ["Sl", "subscript"]
+- ["14POPDataSources18ComposedDataSourceC", "Int"]
+- ["14POPDataSources18ComposedDataSourceC", "TableViewDataSource"]
+- ["14POPDataSources18ComposedDataSourceC", "dataSource"]
+- ["14POPDataSources18ComposedDataSourceC", "dataSources"]
+- ["14POPDataSources18ComposedDataSourceC", "deinit"]
+- ["14POPDataSources18ComposedDataSourceC", "init"]
+- ["14POPDataSources18ComposedDataSourceC", "numberOfSections"]
+- ["14POPDataSources18ComposedDataSourceC", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["14POPDataSources04DataB11ContainableP", "Bool"]
+- ["14POPDataSources04DataB11ContainableP", "CGFloat"]
+- ["14POPDataSources04DataB11ContainableP", "DataSource"]
+- ["14POPDataSources04DataB11ContainableP", "DataSourcesContainable"]
+- ["14POPDataSources04DataB11ContainableP", "IndexPath"]
+- ["14POPDataSources04DataB11ContainableP", "Int"]
+- ["14POPDataSources04DataB11ContainableP", "String"]
+- ["14POPDataSources04DataB11ContainableP", "TableViewDataSource"]
+- ["14POPDataSources04DataB11ContainableP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources04DataB11ContainableP", "UITableView"]
+- ["14POPDataSources04DataB11ContainableP", "UITableViewCell"]
+- ["14POPDataSources04DataB11ContainableP", "UITableViewRowAction"]
+- ["14POPDataSources04DataB11ContainableP", "UIView"]
+- ["14POPDataSources04DataB11ContainableP", ""]
+- ["14POPDataSources04DataB11ContainableP", "dataSource"]
+- ["14POPDataSources04DataB11ContainableP", "dataSources"]
+- !private ["14POPDataSources04DataB11ContainableP", "fatalError"]
+- ["14POPDataSources04DataB11ContainableP", "numberOfSections"]
+- !private ["Se", "count"]
+- !private ["Se", "forEach"]
+- !private ["Se", "subscript"]
+- !private ["SE", "count"]
+- !private ["SE", "forEach"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "count"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "count"]
+- !private ["SH", "forEach"]
+- !private ["SH", "subscript"]
+- !private ["SM", "count"]
+- !private ["SM", "forEach"]
+- !private ["SM", "subscript"]
+- !private ["Sk", "count"]
+- !private ["Sk", "forEach"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "forEach"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "count"]
+- !private ["ST", "forEach"]
+- !private ["ST", "subscript"]
+- ["14POPDataSources19TableViewDataSourceP", "Bool"]
+- ["14POPDataSources19TableViewDataSourceP", "CGFloat"]
+- ["14POPDataSources19TableViewDataSourceP", "DataSourcesContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "IndexPath"]
+- ["14POPDataSources19TableViewDataSourceP", "Int"]
+- ["14POPDataSources19TableViewDataSourceP", "String"]
+- ["14POPDataSources19TableViewDataSourceP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableView"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableViewCell"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableViewRowAction"]
+- ["14POPDataSources19TableViewDataSourceP", "UIView"]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "dataSource"]
+- ["14POPDataSources19TableViewDataSourceP", "dataSources"]
+- !private ["14POPDataSources19TableViewDataSourceP", "footerTitle"]
+- !private ["14POPDataSources19TableViewDataSourceP", "headerTitle"]
+- !private ["14POPDataSources19TableViewDataSourceP", "numberOfRows"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfSections"]
+- !private ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "Sl"
+- "14POPDataSources18ComposedDataSourceC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "14POPDataSources04DataB11ContainableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- "14POPDataSources19TableViewDataSourceP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "6d329be713964c8308c15a5adef0e3f6"

@@ -1,0 +1,155 @@
+{
+  "": {
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/master.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/CellConfigurator/CellConfigurator+Action.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Action.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Action.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Action~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Action.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/CellConfigurator/CellConfigurator+Selectable.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Selectable.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Selectable.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Selectable~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator+Selectable.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/CellConfigurator/CellConfigurator.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/CellConfigurator.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/CellConfigurator/TableViewDataSource+CellSelectable.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/TableViewDataSource+CellSelectable.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/TableViewDataSource+CellSelectable.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/TableViewDataSource+CellSelectable~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/CellConfigurator/TableViewDataSource+CellSelectable.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Extensions/ActionHandleButton.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ActionHandleButton.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ActionHandleButton.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ActionHandleButton~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ActionHandleButton.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Extensions/DataSource+Array.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+Array.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+Array.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+Array~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+Array.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Extensions/DataSource+TableView.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+TableView.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+TableView.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+TableView~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/DataSource+TableView.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Extensions/EmptyView.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/EmptyView.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/EmptyView.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/EmptyView~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/EmptyView.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Extensions/ReuseIdentifier.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ReuseIdentifier.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ReuseIdentifier.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ReuseIdentifier~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/ReuseIdentifier.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Extensions/TableViewDataSource+Internal.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/TableViewDataSource+Internal.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/TableViewDataSource+Internal.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/TableViewDataSource+Internal~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Extensions/TableViewDataSource+Internal.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/SectionConfigurator/SectionConfigurator+Selectable.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator+Selectable.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator+Selectable.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator+Selectable~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator+Selectable.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/SectionConfigurator/SectionConfigurator.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/SectionConfigurator.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/SectionConfigurator/TableViewDataSource+Footer.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Footer.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Footer.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Footer~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Footer.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/SectionConfigurator/TableViewDataSource+Header.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Header.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Header.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Header~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/SectionConfigurator/TableViewDataSource+Header.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Shim/SegmentTableViewShim.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/SegmentTableViewShim.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/SegmentTableViewShim.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/SegmentTableViewShim~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/SegmentTableViewShim.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDataSource.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDataSource.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDataSource.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDataSource~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDataSource.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDelegate.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDelegate.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDelegate.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim+UITableViewDelegate.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/Shim/TableViewDataSourceShim.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/Shim/TableViewDataSourceShim.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource+Collapsible.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Collapsible.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Collapsible.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Collapsible~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Collapsible.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource+Composed.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Composed.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Composed.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Composed~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Composed.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource+DataContainable.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+DataContainable.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+DataContainable.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+DataContainable~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+DataContainable.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource+EditableCell.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+EditableCell.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+EditableCell.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+EditableCell~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+EditableCell.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource+Filterable.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Filterable.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Filterable.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Filterable~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+Filterable.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource+SingleObject.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+SingleObject.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+SingleObject.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+SingleObject~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource+SingleObject.swiftdeps"
+  },
+  "/Users/user/Desktop/POPDataSources/Sources/POPDataSources/TableViewDataSource.swift": {
+    "dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource.d",
+    "object": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource.swift.o",
+    "swiftmodule": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource~partial.swiftmodule",
+    "swift-dependencies": "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources/TableViewDataSource.swiftdeps"
+  }
+}

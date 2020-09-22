@@ -1,0 +1,63 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TableViewDataSource"
+provides-nominal:
+- "14POPDataSources19TableViewDataSourceP"
+provides-member:
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "emptyView"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfSections"]
+- ["14POPDataSources19TableViewDataSourceP", "cellHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "headerTitle"]
+- ["14POPDataSources19TableViewDataSourceP", "footerTitle"]
+- ["14POPDataSources19TableViewDataSourceP", "headerHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "footerHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "headerView"]
+- ["14POPDataSources19TableViewDataSourceP", "footerView"]
+- ["14POPDataSources19TableViewDataSourceP", "didSelectRow"]
+- ["14POPDataSources19TableViewDataSourceP", "didHighlightRow"]
+- ["14POPDataSources19TableViewDataSourceP", "didUnhighlightRow"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources19TableViewDataSourceP", "canEditRow"]
+- ["14POPDataSources19TableViewDataSourceP", "editActions"]
+- ["14POPDataSources19TableViewDataSourceP", "trailingSwipeActions"]
+- ["14POPDataSources19TableViewDataSourceP", "leadingSwipeActions"]
+- ["14POPDataSources19TableViewDataSourceP", "didStartScrolling"]
+- ["14POPDataSources19TableViewDataSourceP", "didEndScrolling"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- "String"
+- "TableViewDataSource"
+- "UISwipeActionsConfiguration"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewRowAction"
+- "UIView"
+depends-member:
+- ["14POPDataSources19TableViewDataSourceP", "Bool"]
+- ["14POPDataSources19TableViewDataSourceP", "CGFloat"]
+- ["14POPDataSources19TableViewDataSourceP", "IndexPath"]
+- ["14POPDataSources19TableViewDataSourceP", "Int"]
+- ["14POPDataSources19TableViewDataSourceP", "String"]
+- ["14POPDataSources19TableViewDataSourceP", "UISwipeActionsConfiguration"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableView"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableViewCell"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableViewRowAction"]
+- ["14POPDataSources19TableViewDataSourceP", "UIView"]
+depends-nominal:
+- "14POPDataSources19TableViewDataSourceP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "1dd5fddd524208d37be369829dc6deba"

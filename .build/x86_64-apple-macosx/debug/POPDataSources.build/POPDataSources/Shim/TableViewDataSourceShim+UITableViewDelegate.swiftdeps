@@ -1,0 +1,52 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "14POPDataSources23TableViewDataSourceShimC"
+provides-member:
+- ["14POPDataSources23TableViewDataSourceShimC", ""]
+provides-dynamic-lookup:
+- "scrollViewDidEndDecelerating"
+- "scrollViewDidEndDragging"
+- "scrollViewDidScroll"
+- "tableView"
+depends-top-level:
+- !private "!"
+- !private ">="
+- "AssignmentPrecedence"
+- "Bool"
+- "CGFloat"
+- "CastingPrecedence"
+- "IndexPath"
+- "Int"
+- "TableViewDataSourceShim"
+- "UIScrollView"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewDelegate"
+- "UIView"
+depends-member:
+- !private ["14POPDataSources19TableViewDataSourceP", "didEndScrolling"]
+- !private ["14POPDataSources19TableViewDataSourceP", "didHighlightRow"]
+- !private ["14POPDataSources19TableViewDataSourceP", "didSelectRow"]
+- !private ["14POPDataSources19TableViewDataSourceP", "didStartScrolling"]
+- !private ["14POPDataSources19TableViewDataSourceP", "didUnhighlightRow"]
+- !private ["14POPDataSources19TableViewDataSourceP", "willDisplay"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Bool"]
+- ["14POPDataSources23TableViewDataSourceShimC", "CGFloat"]
+- ["14POPDataSources23TableViewDataSourceShimC", "IndexPath"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Int"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UIScrollView"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UITableView"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UITableViewCell"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UIView"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "dataSource"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "subscript"]
+depends-nominal:
+- !private "14POPDataSources19TableViewDataSourceP"
+- "14POPDataSources23TableViewDataSourceShimC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "541e96154e35bd0578d5434ab04a4745"

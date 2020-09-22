@@ -1,0 +1,24 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SectionConfigurator"
+provides-nominal:
+- "14POPDataSources19SectionConfiguratorP"
+provides-member:
+- ["14POPDataSources19SectionConfiguratorP", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Int"
+- "SectionConfigurator"
+- "UITableView"
+- "UIView"
+depends-member:
+- ["14POPDataSources19SectionConfiguratorP", "Int"]
+- ["14POPDataSources19SectionConfiguratorP", "SectionView"]
+- ["14POPDataSources19SectionConfiguratorP", "UITableView"]
+- ["14POPDataSources19SectionConfiguratorP", "UIView"]
+depends-nominal:
+- "14POPDataSources19SectionConfiguratorP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "d60b6d29b8ee4e83ea85b515d27980b9"

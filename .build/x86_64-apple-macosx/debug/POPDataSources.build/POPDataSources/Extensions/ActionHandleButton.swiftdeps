@@ -1,0 +1,34 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ActionHandleButton"
+provides-nominal:
+- "14POPDataSources18ActionHandleButtonC"
+provides-member:
+- ["14POPDataSources18ActionHandleButtonC", ""]
+provides-dynamic-lookup:
+- "action"
+- "actionHandle"
+- "triggerActionHandleBlock"
+depends-top-level:
+- "ActionHandleButton"
+- "AssignmentPrecedence"
+- "UIButton"
+- "UIControl"
+- "Void"
+depends-member:
+- !private ["14POPDataSources18ActionHandleButtonC", "ActionHandleButton"]
+- ["14POPDataSources18ActionHandleButtonC", "UIControl"]
+- ["14POPDataSources18ActionHandleButtonC", "Void"]
+- ["14POPDataSources18ActionHandleButtonC", "action"]
+- !private ["14POPDataSources18ActionHandleButtonC", "addTarget"]
+- ["14POPDataSources18ActionHandleButtonC", "deinit"]
+- ["14POPDataSources18ActionHandleButtonC", "init"]
+- ["14POPDataSources18ActionHandleButtonC", "triggerActionHandleBlock"]
+depends-nominal:
+- "14POPDataSources18ActionHandleButtonC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "4e0473e672edbb938668885e9f001b28"

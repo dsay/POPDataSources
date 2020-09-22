@@ -1,0 +1,108 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Section"
+- "TableViewDataSourceShim"
+provides-nominal:
+- "14POPDataSources7SectionO"
+- "14POPDataSources23TableViewDataSourceShimC"
+provides-member:
+- ["14POPDataSources7SectionO", ""]
+- ["14POPDataSources23TableViewDataSourceShimC", ""]
+provides-dynamic-lookup:
+- "dataSource"
+- "emptyView"
+- "footerCache"
+- "headerCache"
+- "isNeedCacheCell"
+- "isNeedCacheSection"
+- "rowCache"
+- "subscript"
+- "tableView"
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- "IntegerLiteralType"
+- "NSObject"
+- "Section"
+- "TableViewDataSource"
+- "TableViewDataSourceShim"
+- "UITableView"
+- "UIView"
+- !private "~="
+depends-member:
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "header"]
+- ["SQ", "init"]
+- ["SQ", "rawValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "header"]
+- ["SH", "init"]
+- ["SH", "rawValue"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "header"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["14POPDataSources7SectionO", "=="]
+- ["14POPDataSources7SectionO", "RawValue"]
+- ["14POPDataSources7SectionO", "_Default_RawValue"]
+- ["14POPDataSources7SectionO", "_rawHashValue"]
+- ["14POPDataSources7SectionO", "deinit"]
+- ["14POPDataSources7SectionO", "footer"]
+- ["14POPDataSources7SectionO", "hash"]
+- ["14POPDataSources7SectionO", "hashValue"]
+- ["14POPDataSources7SectionO", "header"]
+- ["14POPDataSources7SectionO", "init"]
+- ["14POPDataSources7SectionO", "rawValue"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Bool"]
+- ["14POPDataSources23TableViewDataSourceShimC", "CGFloat"]
+- ["14POPDataSources23TableViewDataSourceShimC", "IndexPath"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Int"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Section"]
+- ["14POPDataSources23TableViewDataSourceShimC", "TableViewDataSource"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UITableView"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UIView"]
+- ["14POPDataSources23TableViewDataSourceShimC", "dataSource"]
+- ["14POPDataSources23TableViewDataSourceShimC", "deinit"]
+- ["14POPDataSources23TableViewDataSourceShimC", "emptyView"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "footerCache"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "headerCache"]
+- ["14POPDataSources23TableViewDataSourceShimC", "isNeedCacheCell"]
+- ["14POPDataSources23TableViewDataSourceShimC", "isNeedCacheSection"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "rowCache"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "tableView"]
+depends-nominal:
+- "SQ"
+- "SH"
+- "SY"
+- "14POPDataSources7SectionO"
+- "14POPDataSources23TableViewDataSourceShimC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "445d1f5488b4d13f1bcb194ac03030d8"

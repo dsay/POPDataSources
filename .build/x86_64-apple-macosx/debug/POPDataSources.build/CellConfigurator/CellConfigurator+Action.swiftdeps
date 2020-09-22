@@ -1,0 +1,136 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataSource"
+- "=="
+provides-nominal:
+- "14POPDataSources10DataSourceV"
+- "14POPDataSources10DataSourceV6ActionO"
+provides-member:
+- ["14POPDataSources10DataSourceV", ""]
+- ["14POPDataSources10DataSourceV6ActionO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- "=="
+- "Bool"
+- "DataSource"
+- "Equatable"
+- !private "FloatLiteralType"
+- "Hashable"
+- "Hasher"
+- !private "Int"
+- !private "IntegerLiteralType"
+- "String"
+depends-member:
+- ["14POPDataSources10DataSourceV6ActionO", "=="]
+- ["14POPDataSources10DataSourceV6ActionO", "Bool"]
+- ["14POPDataSources10DataSourceV6ActionO", "DataSource"]
+- ["14POPDataSources10DataSourceV6ActionO", "Hasher"]
+- !private ["14POPDataSources10DataSourceV6ActionO", "Int"]
+- ["14POPDataSources10DataSourceV6ActionO", "String"]
+- ["14POPDataSources10DataSourceV6ActionO", "_rawHashValue"]
+- ["14POPDataSources10DataSourceV6ActionO", "custom"]
+- ["14POPDataSources10DataSourceV6ActionO", "deinit"]
+- ["14POPDataSources10DataSourceV6ActionO", "delete"]
+- ["14POPDataSources10DataSourceV6ActionO", "edit"]
+- ["14POPDataSources10DataSourceV6ActionO", "hash"]
+- ["14POPDataSources10DataSourceV6ActionO", "hashValue"]
+- ["14POPDataSources10DataSourceV6ActionO", "highlight"]
+- ["14POPDataSources10DataSourceV6ActionO", "select"]
+- ["14POPDataSources10DataSourceV6ActionO", "unhighlight"]
+- ["14POPDataSources10DataSourceV6ActionO", "willDisplay"]
+- ["14POPDataSources10DataSourceV6ActionO", "willDisplayFooter"]
+- ["14POPDataSources10DataSourceV6ActionO", "willDisplayHeader"]
+- !private ["SK", "hashValue"]
+- !private ["Sl", "hashValue"]
+- !private ["SL", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- ["14POPDataSources10DataSourceV", "Action"]
+- ["14POPDataSources10DataSourceV", "String"]
+- ["14POPDataSources10DataSourceV", "init"]
+- !private ["Se", "hashValue"]
+- !private ["SE", "hashValue"]
+- ["SQ", "=="]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "custom"]
+- !private ["SQ", "delete"]
+- !private ["SQ", "edit"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "highlight"]
+- !private ["SQ", "select"]
+- !private ["SQ", "unhighlight"]
+- !private ["SQ", "willDisplay"]
+- !private ["SQ", "willDisplayFooter"]
+- !private ["SQ", "willDisplayHeader"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hashValue"]
+- !private ["s32ExpressibleByStringInterpolationP", "hashValue"]
+- !private ["s26ExpressibleByStringLiteralP", "hashValue"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "hashValue"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "custom"]
+- !private ["SH", "delete"]
+- !private ["SH", "edit"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "highlight"]
+- !private ["SH", "select"]
+- !private ["SH", "unhighlight"]
+- !private ["SH", "willDisplay"]
+- !private ["SH", "willDisplayFooter"]
+- !private ["SH", "willDisplayHeader"]
+- !private ["s6HasherV", "combine"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["Sm", "hashValue"]
+- !private ["ST", "hashValue"]
+- !private ["SS", "hashValue"]
+- !private ["Sy", "hashValue"]
+- !private ["s16TextOutputStreamP", "hashValue"]
+- !private ["s20TextOutputStreamableP", "hashValue"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hashValue"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "hashValue"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hashValue"]
+- !private ["s19_HasContiguousBytesP", "hashValue"]
+depends-nominal:
+- "14POPDataSources10DataSourceV6ActionO"
+- !private "SK"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "14POPDataSources10DataSourceV"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "f8eaf8bd17f8b43ce66ffa76f5c17769"

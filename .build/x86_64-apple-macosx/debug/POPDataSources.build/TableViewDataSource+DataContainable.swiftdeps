@@ -1,0 +1,146 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataContainable"
+provides-nominal:
+- "14POPDataSources15DataContainableP"
+provides-member:
+- ["14POPDataSources15DataContainableP", ""]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources15DataContainableP", "numberOfItems"]
+- ["14POPDataSources15DataContainableP", "item"]
+- ["14POPDataSources19TableViewDataSourceP", "cellConfigurator"]
+- ["14POPDataSources19TableViewDataSourceP", "Cell"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfSections"]
+- ["14POPDataSources19TableViewDataSourceP", "numberOfRows"]
+- ["14POPDataSources19TableViewDataSourceP", "cellHeight"]
+- ["14POPDataSources19TableViewDataSourceP", "cell"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- !private "+"
+- !private "<"
+- !private ">="
+- "CGFloat"
+- "CellConfigurator"
+- "CellContainable"
+- "DataContainable"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
+- "TableViewDataSource"
+- "UITableView"
+- "UITableViewCell"
+- !private "fatalError"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "subscript"]
+- ["14POPDataSources16CellConfiguratorP", "CellConfigurator"]
+- ["14POPDataSources16CellConfiguratorP", "CellContainable"]
+- !private ["14POPDataSources16CellConfiguratorP", "configurateCell"]
+- ["14POPDataSources15CellContainableP", "CGFloat"]
+- !private ["14POPDataSources15CellContainableP", "Cell"]
+- ["14POPDataSources15CellContainableP", "CellConfigurator"]
+- ["14POPDataSources15CellContainableP", "CellContainable"]
+- ["14POPDataSources15CellContainableP", "DataContainable"]
+- ["14POPDataSources15CellContainableP", "IndexPath"]
+- ["14POPDataSources15CellContainableP", "Int"]
+- ["14POPDataSources15CellContainableP", "UITableView"]
+- ["14POPDataSources15CellContainableP", "UITableViewCell"]
+- !private ["14POPDataSources15CellContainableP", "cellConfigurator"]
+- !private ["14POPDataSources15CellContainableP", "fatalError"]
+- !private ["14POPDataSources15CellContainableP", "item"]
+- !private ["14POPDataSources15CellContainableP", "numberOfItems"]
+- !private ["Sl", "count"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["14POPDataSources15DataContainableP", "CGFloat"]
+- !private ["14POPDataSources15DataContainableP", "Cell"]
+- ["14POPDataSources15DataContainableP", "CellContainable"]
+- ["14POPDataSources15DataContainableP", "DataContainable"]
+- ["14POPDataSources15DataContainableP", "IndexPath"]
+- ["14POPDataSources15DataContainableP", "Int"]
+- ["14POPDataSources15DataContainableP", "Item"]
+- ["14POPDataSources15DataContainableP", "UITableView"]
+- ["14POPDataSources15DataContainableP", "UITableViewCell"]
+- !private ["14POPDataSources15DataContainableP", "cellConfigurator"]
+- ["14POPDataSources15DataContainableP", "data"]
+- !private ["14POPDataSources15DataContainableP", "fatalError"]
+- ["14POPDataSources15DataContainableP", "item"]
+- ["14POPDataSources15DataContainableP", "numberOfItems"]
+- !private ["Se", "count"]
+- !private ["Se", "subscript"]
+- !private ["SE", "count"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "count"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "count"]
+- !private ["SH", "subscript"]
+- !private ["SM", "count"]
+- !private ["SM", "subscript"]
+- !private ["Sk", "count"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "count"]
+- !private ["ST", "subscript"]
+- ["14POPDataSources19TableViewDataSourceP", "CGFloat"]
+- ["14POPDataSources19TableViewDataSourceP", "Cell"]
+- ["14POPDataSources19TableViewDataSourceP", "CellConfigurator"]
+- ["14POPDataSources19TableViewDataSourceP", "CellContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "DataContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "IndexPath"]
+- ["14POPDataSources19TableViewDataSourceP", "Int"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableView"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableViewCell"]
+- ["14POPDataSources19TableViewDataSourceP", "cellConfigurator"]
+- !private ["14POPDataSources19TableViewDataSourceP", "fatalError"]
+- !private ["14POPDataSources19TableViewDataSourceP", "item"]
+- !private ["14POPDataSources19TableViewDataSourceP", "numberOfItems"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- "14POPDataSources16CellConfiguratorP"
+- "14POPDataSources15CellContainableP"
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "14POPDataSources15DataContainableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- "14POPDataSources19TableViewDataSourceP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "26d34a4783dc957465e042b1daba1b79"

@@ -1,0 +1,40 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CellSelectable"
+provides-nominal:
+- "14POPDataSources14CellSelectableP"
+provides-member:
+- ["14POPDataSources14CellSelectableP", ""]
+- ["14POPDataSources14CellSelectableP", "invoke"]
+- ["14POPDataSources14CellSelectableP", "on"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CellConfigurator"
+- "CellSelectable"
+- "DataSource"
+- "IndexPath"
+depends-member:
+- ["14POPDataSources16CellConfiguratorP", "CellView"]
+- ["14POPDataSources16CellConfiguratorP", "DataSource"]
+- ["14POPDataSources16CellConfiguratorP", "Handler"]
+- ["14POPDataSources16CellConfiguratorP", "IndexPath"]
+- ["14POPDataSources16CellConfiguratorP", "Item"]
+- ["14POPDataSources16CellConfiguratorP", ""]
+- !private ["14POPDataSources16CellConfiguratorP", "selectors"]
+- ["14POPDataSources14CellSelectableP", "CellView"]
+- ["14POPDataSources14CellSelectableP", "DataSource"]
+- ["14POPDataSources14CellSelectableP", "Handler"]
+- ["14POPDataSources14CellSelectableP", "IndexPath"]
+- ["14POPDataSources14CellSelectableP", "Item"]
+- !private ["14POPDataSources14CellSelectableP", "selectors"]
+- ["14POPDataSources10DataSourceV", "Action"]
+depends-nominal:
+- "14POPDataSources16CellConfiguratorP"
+- "14POPDataSources14CellSelectableP"
+- "14POPDataSources10DataSourceV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "9249f1b97797dad8b1e1580a4f6d13a8"

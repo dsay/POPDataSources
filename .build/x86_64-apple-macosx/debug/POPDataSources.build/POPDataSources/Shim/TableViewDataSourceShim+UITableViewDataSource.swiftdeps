@@ -1,0 +1,47 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "14POPDataSources23TableViewDataSourceShimC"
+provides-member:
+- ["14POPDataSources23TableViewDataSourceShimC", ""]
+provides-dynamic-lookup:
+- "numberOfSections"
+- "tableView"
+depends-top-level:
+- !private "+"
+- !private "..<"
+- "Bool"
+- "IndexPath"
+- "Int"
+- "String"
+- "TableViewDataSourceShim"
+- "UISwipeActionsConfiguration"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewDataSource"
+- "UITableViewRowAction"
+depends-member:
+- !private ["14POPDataSources19TableViewDataSourceP", "canEditRow"]
+- !private ["14POPDataSources19TableViewDataSourceP", "footerTitle"]
+- !private ["14POPDataSources19TableViewDataSourceP", "headerTitle"]
+- !private ["14POPDataSources19TableViewDataSourceP", "numberOfRows"]
+- !private ["14POPDataSources19TableViewDataSourceP", "numberOfSections"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Bool"]
+- ["14POPDataSources23TableViewDataSourceShimC", "IndexPath"]
+- ["14POPDataSources23TableViewDataSourceShimC", "Int"]
+- ["14POPDataSources23TableViewDataSourceShimC", "String"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UISwipeActionsConfiguration"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UITableView"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UITableViewCell"]
+- ["14POPDataSources23TableViewDataSourceShimC", "UITableViewRowAction"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "dataSource"]
+- !private ["14POPDataSources23TableViewDataSourceShimC", "emptyView"]
+depends-nominal:
+- !private "14POPDataSources19TableViewDataSourceP"
+- "14POPDataSources23TableViewDataSourceShimC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "ff1da7ac64418f5e225b6a058d889b82"

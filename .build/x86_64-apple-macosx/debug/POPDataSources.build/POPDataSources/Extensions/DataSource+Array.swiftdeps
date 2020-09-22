@@ -1,0 +1,105 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["Sa", ""]
+- ["Sa", "changes"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "Array"
+- !private "Bool"
+- "Equatable"
+- "Int"
+depends-member:
+- !private ["Sa", "Bool"]
+- ["Sa", "Equatable"]
+- ["Sa", "Int"]
+- ["Sa", "changes"]
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "filter"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "enumerated"]
+- !private ["SK", "filter"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "enumerated"]
+- !private ["Sl", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "enumerated"]
+- !private ["Se", "filter"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "filter"]
+- !private ["s18EnumeratedSequenceV", "compactMap"]
+- !private ["s18EnumeratedSequenceV", "first"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "enumerated"]
+- !private ["SQ", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "enumerated"]
+- !private ["SH", "filter"]
+- !private ["SM", "compactMap"]
+- !private ["SM", "enumerated"]
+- !private ["SM", "filter"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "enumerated"]
+- !private ["Sk", "filter"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "enumerated"]
+- !private ["Sm", "filter"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+depends-nominal:
+- "Sa"
+- !private "SK"
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "s18EnumeratedSequenceV"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "c8ac86237fca5300a05924f1b01eb875"

@@ -1,0 +1,56 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "attributes"]
+- ["14POPDataSources19TableViewDataSourceP", "height"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CGFloat"
+- "CellContainable"
+- "DataContainable"
+- "IndexPath"
+- "Int"
+- !private "StringLiteralType"
+- "TableViewDataSource"
+- "UITableView"
+- "UIView"
+- !private "fatalError"
+depends-member:
+- ["14POPDataSources15CellContainableP", "Cell"]
+- ["14POPDataSources15CellContainableP", "CellContainable"]
+- ["14POPDataSources15CellContainableP", "DataContainable"]
+- ["14POPDataSources15CellContainableP", "IndexPath"]
+- ["14POPDataSources15CellContainableP", "Item"]
+- ["14POPDataSources15CellContainableP", "UITableView"]
+- !private ["14POPDataSources15CellContainableP", "fatalError"]
+- !private ["14POPDataSources15CellContainableP", "item"]
+- ["14POPDataSources15DataContainableP", "Cell"]
+- ["14POPDataSources15DataContainableP", "CellContainable"]
+- ["14POPDataSources15DataContainableP", "DataContainable"]
+- ["14POPDataSources15DataContainableP", "IndexPath"]
+- ["14POPDataSources15DataContainableP", "Item"]
+- ["14POPDataSources15DataContainableP", "UITableView"]
+- !private ["14POPDataSources15DataContainableP", "fatalError"]
+- !private ["14POPDataSources15DataContainableP", "item"]
+- ["14POPDataSources19TableViewDataSourceP", "CGFloat"]
+- ["14POPDataSources19TableViewDataSourceP", "Cell"]
+- ["14POPDataSources19TableViewDataSourceP", "CellContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "DataContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "IndexPath"]
+- ["14POPDataSources19TableViewDataSourceP", "Int"]
+- ["14POPDataSources19TableViewDataSourceP", "Item"]
+- ["14POPDataSources19TableViewDataSourceP", "UITableView"]
+- ["14POPDataSources19TableViewDataSourceP", "UIView"]
+- !private ["14POPDataSources19TableViewDataSourceP", "fatalError"]
+- !private ["14POPDataSources19TableViewDataSourceP", "item"]
+depends-nominal:
+- "14POPDataSources15CellContainableP"
+- "14POPDataSources15DataContainableP"
+- "14POPDataSources19TableViewDataSourceP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "c6b277123de8b38313382cb08e00f552"

@@ -1,0 +1,38 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SingleObject"
+provides-nominal:
+- "14POPDataSources12SingleObjectP"
+provides-member:
+- ["14POPDataSources12SingleObjectP", ""]
+- ["14POPDataSources19TableViewDataSourceP", ""]
+- ["14POPDataSources19TableViewDataSourceP", "data"]
+provides-dynamic-lookup:
+depends-top-level:
+- "DataContainable"
+- "SingleObject"
+- "TableViewDataSource"
+depends-member:
+- ["14POPDataSources15DataContainableP", "DataContainable"]
+- ["14POPDataSources15DataContainableP", "Item"]
+- ["14POPDataSources15DataContainableP", "SingleObject"]
+- !private ["14POPDataSources15DataContainableP", "item"]
+- ["14POPDataSources12SingleObjectP", "DataContainable"]
+- ["14POPDataSources12SingleObjectP", "Item"]
+- ["14POPDataSources12SingleObjectP", "SingleObject"]
+- ["14POPDataSources12SingleObjectP", "item"]
+- ["14POPDataSources19TableViewDataSourceP", "DataContainable"]
+- ["14POPDataSources19TableViewDataSourceP", "Item"]
+- ["14POPDataSources19TableViewDataSourceP", "SingleObject"]
+- ["14POPDataSources19TableViewDataSourceP", "data"]
+- !private ["14POPDataSources19TableViewDataSourceP", "item"]
+depends-nominal:
+- "14POPDataSources15DataContainableP"
+- "14POPDataSources12SingleObjectP"
+- "14POPDataSources19TableViewDataSourceP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/module.modulemap"
+interface-hash: "40e70bfe1ee7adb9ccd7d28a08324899"

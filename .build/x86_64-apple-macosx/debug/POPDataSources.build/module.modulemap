@@ -1,0 +1,4 @@
+module POPDataSources {
+    header "/Users/user/Desktop/POPDataSources/.build/x86_64-apple-macosx/debug/POPDataSources.build/POPDataSources-Swift.h"
+    requires objc
+}
