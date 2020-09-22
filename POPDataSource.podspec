@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   
   s.platform = :ios
   
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   
   s.name = "POPDataSource"
   
