@@ -1,12 +1,12 @@
 import UIKit
 
 public struct EditAction {
-    let action: DataSource.Action
+    let action: Action
     let title: String
     let color: UIColor
     let image: UIImage?
 
-    public init(action: DataSource.Action, title: String, color: UIColor, image: UIImage?) {
+    public init(action: Action, title: String, color: UIColor, image: UIImage?) {
         self.action = action
         self.title = title
         self.color = color

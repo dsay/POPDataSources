@@ -1,21 +1,19 @@
 import UIKit
-
-public struct DataSource {
     
-    public enum Action {
-        case select
-        case edit
-        case delete
-        case highlight
-        case unhighlight
-        case willDisplay
-        case willDisplayHeader
-        case willDisplayFooter
-        case custom(String)
-    }
+public enum Action {
+    case select
+    case edit
+    case delete
+    case highlight
+    case unhighlight
+    case willDisplay
+    case willDisplayHeader
+    case willDisplayFooter
+    case custom(String)
 }
 
-extension DataSource.Action: Hashable, Equatable {
+
+extension Action: Hashable, Equatable {
     
     public func hash(into hasher: inout Hasher) {
         var hashValue: Int {
@@ -34,7 +32,7 @@ extension DataSource.Action: Hashable, Equatable {
         hasher.combine(hashValue)
     }
     
-    public static func ==(lhs: DataSource.Action, rhs: DataSource.Action) -> Bool {
+    public static func ==(lhs: Action, rhs: Action) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
 }

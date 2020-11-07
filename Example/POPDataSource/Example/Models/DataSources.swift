@@ -25,8 +25,7 @@ struct GenresDataSource:
      *  Setup Cell
      */
     
-    var selectors: [DataSource
-        .Action: (TableViewCell, IndexPath, Genre) -> ()] = [:]
+    var selectors: [Action: (TableViewCell, IndexPath, Genre) -> ()] = [:]
     
     func leadingActions() -> [EditAction] {
         return []
@@ -113,8 +112,7 @@ struct AlbumsCellConfigurator: CellConfigurator, CellSelectable {
     /**
      *  Setup Selectors
      */
-    var selectors: [DataSource
-    .Action: (CustomeCell, IndexPath, Album) -> ()] = [:]
+    var selectors: [Action: (CustomeCell, IndexPath, Album) -> ()] = [:]
 
     /**
      *  Setup Cell
@@ -133,8 +131,7 @@ struct AlbumsSection: SectionConfigurator, SectionSelectable {
     /**
      *  Setup Selectors
      */
-    var selectors: [DataSource
-        .Action: (CustomeSection, Int) -> ()] = [:]
+    var selectors: [Action: (CustomeSection, Int) -> ()] = [:]
 
     /**
      *  Setup Section

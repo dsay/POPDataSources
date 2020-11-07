@@ -22,8 +22,7 @@ class TextFieldDataSource:
         return [""]
     }
     
-    var selectors: [DataSource
-        .Action: (TextFieldTableViewCell, IndexPath, String) -> ()] = [:]
+    var selectors: [Action: (TextFieldTableViewCell, IndexPath, String) -> ()] = [:]
     
     func configurateCell(_ cell: TextFieldTableViewCell, for tableView: UITableView, at indexPath: IndexPath, item: String) {
         
