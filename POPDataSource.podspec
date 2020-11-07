@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-  s.version = "0.3.19"
+  s.version = "0.3.20"
   
   s.license = { :type => 'MIT', :file => 'LICENSE' }
 

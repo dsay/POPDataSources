@@ -1,9 +1,9 @@
 import Foundation
 
-protocol DataSource: TableViewDataSource,
-                      DataContainable,
-                      CellContainable,
-                      CellConfigurator
+public protocol DataSource: TableViewDataSource,
+                            DataContainable,
+                            CellContainable,
+                            CellConfigurator
 {
     
 }
